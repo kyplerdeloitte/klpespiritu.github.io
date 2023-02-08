@@ -1,0 +1,2343 @@
+
+<link rel="stylesheet" href="https://www2.deloitte.com/content/dam/html/shared/transform-transformation/css/main.css">
+<link rel="stylesheet" href="charts.css-0.9.0\dist\charts.min.css">
+
+
+
+<style>
+    #book_demo {
+        border: 2px solid #86BC25;
+        background: #86BC25;
+        font-size: 1.25em;
+        padding: 10px;
+        color: white;
+        font-weight: bolder;
+        margin: 32px 25px 0 0;
+        letter-spacing: 1.5px;
+        box-shadow: 3px 3px 1px white;
+        width: 175px;
+    }
+    #book_demo:hover {
+        background-color: #6f9e18;
+        border: 2px solid #6f9e18;
+    }
+
+    #pricing_points li:before {
+        content: '✓';
+        padding-right: 5px;
+    }
+
+    html {
+        font-family: 'Open Sans', Calibri, sans-serif;
+    }
+    .top_bottom_shadow {
+        box-shadow: 0px -2px 5px #53565A, 0px 2px 5px #53565A;
+    }
+    .grid_three_by_three {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+        .grid_three_by_three div {
+            padding: 10px;
+            background-color: #f6f6f6;
+        }
+    /*LOOPED*/
+    #mouse {
+        animation: main_mouse 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #button_blue {
+        animation: hide_buttons 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #button_1 {
+        animation: click_anim_1 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #button_2 {
+        animation: click_anim_2 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #button_3 {
+        animation: click_anim_3 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #sulurit td {
+        animation: sulurit 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+        transform-origin: bottom;
+    }
+
+    #sulurit td #data_sulurit_1 {
+        animation: sulurit_number_1 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #sulurit td #data_sulurit_2 {
+        animation: sulurit_number_2 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+        #sulurit td #data_sulurit_3 {
+            animation: sulurit_number_3 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
+
+
+
+    #blue {
+        animation: linurit_blatt 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #gray {
+        animation: linurit_gratt 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #opacity_anim {
+        animation: decrease_opac 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #default_key_1, #default_key_2 {
+        animation: hide_default_keys 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #reveal_key_1, #reveal_key_2 {
+        animation: reveal_all_keys 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #samtals_1 {
+        animation: samtals_1 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #samtals_2 {
+        animation: samtals_2 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #table_header_tekjur {
+        animation: header_click_1 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #table_header_framlegd {
+        animation: header_click_2 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #table_header_ebitda {
+        animation: header_click_3 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #framlegd_card {
+        animation: card_title_1 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #ebitda_card { /* EBITDA í ár*/
+        animation: card_title_2 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #ebitda_card_month { /* EBITDA í maí*/
+        animation: card_title_3 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #year_hide {
+        animation: numbers_1 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #numbers_panel {
+        animation: flip_panel 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #main_animation_container {
+        animation: flip_container 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+
+    #sidebar_anim {
+        animation: hide_sidebar 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #flip_card {
+        border: 1px solid #e8e8e8;
+        animation: hide_tables 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #my-chart {
+        border: 1px solid #e8e8e8;
+        animation: hide_tables 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+
+    #report_container_1 {
+        animation: circle_card_1 15s linear infinite;
+        animation-fill-mode: forwards;
+    }
+    #report_container_2 {
+        animation: circle_card_2 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+    #report_container_3 {
+        animation: circle_card_3 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+        animation-delay: 0.3s;
+    }
+    #report_container_4 {
+        animation: circle_card_4 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+        animation-delay: 0.33s;
+    }
+    #report_container_5 {
+        animation: circle_card_5 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+        animation-delay: 0.66s;
+    }
+    #report_container_6 {
+        animation: circle_card_6 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+    }
+
+
+    #deloitte_circle {
+        animation: scale_circle 15s ease-in-out infinite;
+        animation-fill-mode: forwards;
+    }
+
+
+
+    #secondary_navbar {
+        justify-content: center;
+        display: flex;
+    }
+    .tabcontent {
+        display: none;
+        //-webkit-animation: fadeEffect 0.2s;
+       //animation: fadeEffect 0.2s;
+    }
+    #secondary_navbar li button {
+        font-size: 1.5em;
+        font-weight: bolder;
+        text-align: center;
+        width: 250px;
+        margin: 25px 0 25px 0;
+        color: white;
+        letter-spacing: 0.5px;
+        padding: 5px 15px 5px 15px;
+        text-decoration: none;
+        outline: none;
+    }
+    #secondary_navbar li button:after {
+            display: block;
+            content: '';
+            border-bottom: solid 3px white;
+            transform: scaleX(0);
+            transition: transform 300ms ease-in-out;
+        }
+
+
+    #secondary_navbar li button:hover:after {
+            transform: scaleX(1);
+        }
+
+    #secondary_navbar li button.active:after {
+            transform: scaleX(1);
+            border-bottom: 2px solid white;
+        }
+
+
+    .columns {
+        float: left;
+        width: 33.3%;
+        padding: 8px;
+    }
+
+    .price {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        box-shadow: 2px 2px 2px #53565A;
+    }
+
+    .price .header {
+        background-color: #111;
+        color: white;
+        font-size: 25px;
+    }
+
+    .price li {
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .price .grey {
+        background-color: #eee;
+        font-size: 20px;
+    }
+
+    #feature_list {
+        font-size: 1.25em;
+        text-align: center;
+        width: 100%;
+        border-collapse:collapse;
+    }
+
+    #feature_list td {
+        padding: 12.5px 25px;
+    }
+
+    #feature_list tr:first-child th:first-child {
+        background: white;
+        border: none;
+        text-align: left;
+    }
+
+    #feature_list tr td:first-child {
+        font-size: 1.25em;
+        border: none;
+        text-align: left;
+    }
+    #feature_list tr td#title {
+        font-size: 1.35em;
+        font-weight: bolder;
+        border: none;
+        text-align: left;
+        color: black;
+    }
+
+    #feature_list tr#feat_row:hover {
+        outline: 2px solid black;
+    }
+    #feature_list th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 1.5em;
+        border-bottom: 1px solid #D0D0CE;
+    }
+    #feature_list td + td {
+        border-left: 1px solid #D0D0CE;
+        border-right: 1px solid #D0D0CE;
+    }
+    #feature_list tr:last-child td:nth-child(n+2) {
+        border-bottom: 1px solid #D0D0CE;
+    }
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 350px;
+        background-color: black;
+        color: #fff;
+        text-align: left;
+        border-radius: 6px;
+        padding: 10px;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        font-size: 0.85em;
+        top: 35px;
+        left: -50px;
+    }
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+    ul#pricing_points li {
+        color: #53565A;
+        font-size: 1.15em;
+        padding: 5px 0;
+    }
+
+    @-webkit-keyframes scale_circle {
+        0% {
+            transform: scale(0);
+        }
+
+        61% {
+            transform: scale(0);
+        }
+
+        65% {
+            transform: scale(1);
+        }
+        95% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(0);
+        }
+    }
+    @-webkit-keyframes circle_card_1 {
+        0% {
+            opacity: 0%;
+            transform: scale(0.1);
+            left: -55px;
+        }
+
+        60% {
+            transform: scale(0);
+            left: 25px;
+        }
+
+        61% {
+            opacity: 0%;
+        }
+
+        65% {
+            opacity: 100%;
+            transform: scale(1.2);
+        }
+
+        90% {
+            opacity: 100%;
+            transform: scale(1.2);
+            left: 150px;
+        }
+
+        96% {
+            opacity: 100%;
+            transform: scale(1);
+            left: 1225px;
+        }
+
+        100% {
+            opacity: 0%;
+            transform: scale(0.1);
+            
+        }
+    }
+    @-webkit-keyframes circle_card_2 {
+        0% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+
+        65% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+
+        70% {
+            opacity: 100%;
+            transform: scale(1.0);
+        }
+
+        90% {
+            opacity: 100%;
+            transform: scale(1.05);
+        }
+
+        98% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+
+        100% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+    }
+    @-webkit-keyframes circle_card_3 {
+        0% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+
+        65% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+
+        70% {
+            opacity: 100%;
+            transform: scale(0.9);
+        }
+
+        90% {
+            opacity: 100%;
+            transform: scale(0.9);
+        }
+
+        98% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+
+        100% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+    }
+    @-webkit-keyframes circle_card_4 {
+        0% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+
+        65% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+
+        70% {
+            opacity: 25%;
+            transform: scale(0.5);
+        }
+
+        90% {
+            opacity: 25%;
+            transform: scale(0.6);
+        }
+
+        95% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+
+        100% {
+            transform: scale(0.1);
+        }
+    }
+    @-webkit-keyframes circle_card_5 {
+        0% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+
+        65% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+
+        70% {
+            opacity: 35%;
+            transform: scale(0.75);
+        }
+
+        90% {
+            opacity: 35%;
+            transform: scale(0.85);
+        }
+
+        95% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+
+        100% {
+            transform: scale(0.1);
+        }
+    }
+    @-webkit-keyframes circle_card_6 {
+        0% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+
+        65% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+
+        70% {
+            opacity: 30%;
+            transform: scale(1);
+        }
+
+        90% {
+            opacity: 30%;
+            transform: scale(1.1);
+        }
+
+        95% {
+            opacity: 0%;
+            transform: scale(0.1);
+        }
+
+        100% {
+            transform: scale(0.1);
+        }
+    }
+
+
+    @keyframes flip_container {
+
+        0% {
+            right: -350px;
+        }
+
+        60% {
+            right: -350px;
+        }
+
+        65% {
+            right: -1700px;
+        }
+
+        93% {
+            right: -1700px;
+        }
+
+        100% {
+            right: -350px;
+        }
+    }
+
+
+
+
+    @-webkit-keyframes fadeEffect {
+        from {
+            opacity: 0.9;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeEffect {
+        from {
+            opacity: 0.9;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
+
+    /*LOOPED*/
+    @keyframes main_mouse {
+        0% {
+            top: 50px;
+            left: 275px;
+        }
+
+        6% {
+            top: 50px;
+            left: 275px;
+        }
+
+        13% {
+            top: -190px;
+            left: -120px;
+        }
+
+        16% {
+            top: -190px;
+            left: -120px;
+        }
+
+        20% {
+            top: -85px;
+            left: -120px;
+        }
+
+        22% {
+            top: -85px;
+            left: -120px;
+        }
+
+        26% {
+            top: -10px;
+            left: 320px;
+        }
+
+        90% {
+            top: -10px;
+            left: 320px;
+        }
+
+        100% {
+            top: 50px;
+            left: 275px;
+        }
+    }
+    @keyframes click_anim_1 {
+        0% {
+            opacity: 100%;
+        }
+
+        12.5% {
+            opacity: 100%;
+        }
+
+        13% {
+            opacity: 65%;
+        }
+
+        13.75% {
+            opacity: 100%;
+        }
+
+        65% {
+            transform: scale(1);
+        }
+
+        70% {
+            transform: scale(0);
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
+    @keyframes click_anim_2 {
+        0% {
+            opacity: 100%;
+        }
+
+        19.5% {
+            opacity: 100%;
+        }
+
+        20.25% {
+            opacity: 65%;
+        }
+
+        20.75% {
+            opacity: 100%;
+        }
+
+        65% {
+            transform: scale(1);
+        }
+
+        70% {
+            transform: scale(0);
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
+    @keyframes click_anim_3 {
+        0% {
+            opacity: 100%;
+        }
+
+        26.5% {
+            opacity: 100%;
+        }
+
+        27% {
+            opacity: 65%;
+        }
+
+        27.75% {
+            opacity: 100%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
+    @keyframes hide_buttons {
+        0% {
+            transform: scale(1);
+        }
+
+        65% {
+            transform: scale(1);
+        }
+
+        70% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+    @keyframes sulurit {
+
+        0% {
+            transform: scaleY( 1 );
+        }
+
+        13.5% {
+            transform: scaleY( 1 );
+        }
+
+        15% {
+            transform: scaleY( 0.6 );
+        }
+
+        20.25% {
+            transform: scaleY( 0.6 );
+        }
+
+        21.75% {
+            transform: scaleY( 0.4 );
+        }
+
+        90% {
+            transform: scaleY( 0.4 );
+        }
+
+        100% {
+            transform: scaleY( 1 );
+        }
+    }
+
+    @keyframes sulurit_number_1 {
+
+        0% {
+            opacity: 100%;
+            transform: scaleY( 1 );
+        }
+
+        13.5% {
+            opacity: 100%;
+            transform: scaleY( 1 );
+        }
+
+        15% {
+            opacity: 0%;
+            transform: scaleY( 1.6 );
+        }
+
+        20.25% {
+            transform: scaleY( 1.6 );
+        }
+
+        21.75% {
+            transform: scaleY( 2.5 );
+        }
+
+        90% {
+            opacity: 0%;
+            transform: scaleY( 2.5 );
+        }
+
+        100% {
+            opacity: 100%;
+            transform: scaleY( 1 );
+        }
+    }
+    @keyframes sulurit_number_2 {
+
+        0% {
+            opacity: 0%;
+            transform: scaleY( 1 );
+        }
+
+        13.5% {
+            opacity: 0%;
+            transform: scaleY( 1 );
+        }
+
+        15% {
+            opacity: 100%;
+            transform: scaleY( 1.6 );
+        }
+
+        20.25% {
+            opacity: 100%;
+            transform: scaleY( 1.6 );
+        }
+
+        21.75% {
+            opacity: 0%;
+            transform: scaleY( 2.5 );
+        }
+
+        90% {
+            opacity: 0%;
+            transform: scaleY( 2.5 );
+        }
+
+        100% {
+            opacity: 0%;
+            transform: scaleY( 1 );
+        }
+    }
+    @keyframes sulurit_number_3 {
+
+        0% {
+            opacity: 0%;
+            transform: scaleY( 1 );
+        }
+
+        13.5% {
+            opacity: 0%;
+            transform: scaleY( 1 );
+        }
+
+        15% {
+            opacity: 0%;
+            transform: scaleY( 1.6 );
+        }
+
+        20.25% {
+            opacity: 0%;
+            transform: scaleY( 1.6 );
+        }
+
+        21.75% {
+            opacity: 100%;
+            transform: scaleY( 2.5 );
+        }
+
+        90% {
+            opacity: 100%;
+            transform: scaleY( 2.5 );
+        }
+
+        100% {
+            opacity: 0%;
+            transform: scaleY( 1 );
+        }
+    }
+
+
+
+    @keyframes linurit_blatt {
+
+        0% {
+            transform: scaleY( 1 );
+        }
+
+        13.5% {
+            transform: scaleY( 1 );
+        }
+
+        15% {
+            transform: scaleY( -0.5 );
+        }
+
+        20.25% {
+            transform: scaleY( -0.5 );
+        }
+
+        21.75% {
+            transform: scaleY( -0.8 );
+        }
+
+        90% {
+            transform: scaleY( -0.8 );
+        }
+
+        100% {
+            transform: scaleY( 1 );
+        }
+    }
+    @keyframes linurit_gratt {
+
+        0% {
+            transform: scaleY( 1 );
+        }
+
+        13.5% {
+            transform: scaleY( 1 );
+        }
+
+        15% {
+            transform: scaleY( 0.5 );
+        }
+
+        20.25% {
+            transform: scaleY( 0.5 );
+        }
+
+        21.75% {
+            transform: scaleY( -0.6 );
+        }
+
+        90% {
+            transform: scaleY( -0.6 );
+        }
+
+        100% {
+            transform: scaleY( 1 );
+        }
+    }
+    @keyframes decrease_opac {
+        0% {
+            opacity: 100%;
+        }
+
+        27% {
+            opacity: 100%;
+        }
+
+        27.5% {
+            opacity: 40%;
+        }
+
+        90% {
+            opacity: 40%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
+    @keyframes reveal_all_keys {
+        0% {
+            opacity: 0%;
+            left: 200px;
+        }
+
+        19.5% {
+            opacity: 0%;
+        }
+
+        21% {
+            opacity: 100%;
+        }
+
+        60% {
+            opacity: 100%;
+            left: 200px;
+        }
+        61% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 0%;
+            left: 245px;
+        }
+    }
+    @keyframes samtals_1 {
+        0% {
+            opacity: 0%;
+        }
+
+        13.5% {
+            opacity: 0%;
+        }
+
+        15% {
+            opacity: 100%;
+        }
+
+        20% {
+            opacity: 100%;
+        }
+
+        21% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 0%;
+        }
+    }
+    @keyframes samtals_2 {
+        0% {
+            opacity: 0%;
+            left: 200px;
+        }
+
+        19.5% {
+            opacity: 0%;
+            left: 200px;
+        }
+
+        21% {
+            opacity: 100%;
+            left: 245px;
+        }
+
+        60% {
+            opacity: 100%;
+            left: 245px;
+        }
+        61% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 0%;
+            left: 245px;
+        }
+    }
+    @keyframes hide_default_keys {
+        0% {
+            opacity: 0%;
+        }
+
+        13% {
+            opacity: 0%;
+        }
+
+        13.5% {
+            opacity: 100%;
+        }
+
+        60% {
+            opacity: 100%;
+        }
+        61% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 0%;
+        }
+    }
+    @keyframes header_click_1 {
+        0% {
+            opacity: 100%;
+        }
+        12.5% {
+            opacity: 100%;
+        }
+
+        13% {
+            opacity: 0%;
+        }
+        98% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
+    @keyframes header_click_2 {
+        0% {
+            opacity: 0%;
+        }
+
+        12.5% {
+            opacity: 0%;
+        }
+
+        13.5% {
+            opacity: 100%;
+        }
+
+        20% {
+            opacity: 100%;
+        }
+        21% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 0%;
+        }
+    }
+    @keyframes header_click_3 {
+        0% {
+            opacity: 0%;
+        }
+
+        20% {
+            opacity: 0%;
+        }
+
+        21% {
+            opacity: 100%;
+        }
+
+        98% {
+            opacity: 100%;
+        }
+
+        100% {
+            opacity: 0%;
+        }
+    }
+    @keyframes card_title_1 {
+        0% {
+            opacity: 0%;
+        }
+        12.5% {
+            opacity: 0%;
+        }
+        13% {
+            opacity: 100%;
+        }
+        19.5% {
+            opacity: 100%;
+        }
+        20.5% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 0%;
+        }
+    }
+    @keyframes card_title_2 {
+        0% {
+            opacity: 0%;
+        }
+
+        20% {
+            opacity: 0%;
+        }
+
+        21% {
+            opacity: 100%;
+        }
+
+        26% {
+            opacity: 100%;
+        }
+
+        27% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 0%;
+        }
+    }
+    @keyframes card_title_3 {
+        0% {
+            opacity: 0%;
+        }
+
+        26.5% {
+            opacity: 0%;
+        }
+
+        27% {
+            opacity: 100%;
+        }
+
+        60% {
+            opacity: 100%;
+        }
+
+        61% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 0%;
+        }
+    }
+    @keyframes numbers_1 {
+        0% {
+            opacity: 100%;
+        }
+
+        26% {
+            opacity: 100%;
+        }
+
+        27% {
+            opacity: 0%;
+        }
+
+        98% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 100%;
+        }
+    }
+    @keyframes flip_panel {
+
+        0% {
+            opacity: 0%;
+            transform: rotateX(65deg);
+            box-shadow: 3px -3px 5px #53565A;
+            
+        }
+
+        12.5% {
+            opacity: 0%;
+            transform: rotateX(65deg);
+            box-shadow: 3px -3px 5px #53565A;
+        }
+
+        15% {
+            opacity: 100%;
+            transform: rotateX(0deg);
+            box-shadow: 3px 3px 5px #53565A;
+        }
+
+        19.5% {
+            height: 180px;
+        }
+
+        21.5% {
+            height: 265px;
+        }
+
+        60% {
+            opacity: 100%;
+            transform: rotateX(0deg);
+            box-shadow: 3px 3px 5px #53565A;
+            height: 265px;
+        }
+
+        65% {
+            opacity: 0%;
+            transform: rotateX(90deg);
+            box-shadow: 3px -3px 5px #53565A;
+            height: 180px;
+        }
+
+        100% {
+            opacity: 0%;
+            transform: rotateX(65);
+            box-shadow: 3px -3px 5px #53565A;
+        }
+    }
+
+
+
+    @keyframes hide_sidebar {
+
+        0% {
+            left: 0;
+        }
+
+        62.5% {
+            left: 0;
+        }
+
+        70% {
+            left: -300px;
+        }
+
+        95% {
+            left: -300px;
+        }
+
+        100% {
+            left: 0;
+        }
+    }
+    @keyframes hide_tables {
+        0% {
+            margin-right: 290x;
+        }
+
+        62.5% {
+            margin-right: 290px;
+        }
+
+        70% {
+            margin-right: -500px;
+        }
+
+        95% {
+            margin-right: -500px;
+        }
+
+        100% {
+            margin-right: 290px;
+        }
+    }
+
+    
+    
+
+</style>
+
+<section id="export-container" class="export__container">
+    <header style="width: 100%; height: 70px; background: black;"></header>
+
+
+    <header class="pd-header header__container  pd-bg__black pd-header-aem bottom relative" style="height: 800px; transform: translateZ(0); ">
+        <div class="pd-row" style="margin-top: -35px;">
+            <div class="header__grid">
+                <div class="z-20 height">
+                    <div class="header__content">
+                        <h1 class="heading">
+                            <div style=" letter-spacing: 2px; color: black; font-size: 1.25em; font-weight: 900; /*font-family: Times New Roman;*/ background: white; padding: 0 15px 0 15px; width: 490px;">Umbreyttu þinni</div>
+                            <div style=" letter-spacing: 2px; color: black; font-size: 1.25em; font-weight: 900; /*font-family: Times New Roman;*/ background: white; padding: 0 15px 0 15px; width: 440px;">ákvarðanatöku</div>
+                            <div style=" word-spacing: 5px; color: white; /* font-weight: 900; */ font-size: 28px; width: 553px; background: black; padding: 10px; ">Réttar ákvarðanir byrja á réttum tölum á réttum tíma, rétt framsettar í þínum höndum</div>
+                        </h1>
+                        <div>
+                            <button onclick="window.open('https://deloittereports.is/Home/Booking','_blank');" style="" id="book_demo"><a href="javascript:void(0);">Bóka Demo</a></button>
+                            <button onclick="window.open('https://deloittereports.is/','_blank');" style="padding: 10px; font-size: 1.25em; color: white; margin-top: 32px; font-weight: bolder; letter-spacing: 1.5px; border: 2px solid white; width: 150px; box-shadow: 3px 3px 1px white;"><a href="javascript:void(0);">Skrá inn</a></button>
+                        </div>
+                        <div style=" word-spacing: 5px; color: white; /* font-weight: 900; */ font-size: 28px; width: 650px; padding: 10px; top: 600px; position: absolute;">Rekstrargreingingar Deloitte í mánaðarlegri áskrift. <br /> <span style="color: #86BC25;">Prufaðu frítt í 30 daga.</span></div>
+                    </div>
+                    <!-- <div style=" position: absolute; background: #fcfcfc; width: 1080px; height: 675px; right: -302px; top: 50px; border-radius: 5px;"></div>-->
+
+
+                    <div style="background: white; width: 650px; height: 650px; position: absolute; border-radius: 100%; top: 80px; right: 150px; box-shadow: -2px 2px 5px #75787B; transform: scale(0);  " id="deloitte_circle">
+
+                        <div style="height: 198px; width: 350px; position: absolute; z-index: 255; background: white; top: 25px; left: 25px; box-shadow: 2px 2px 2px #53565A; opacity: 0%; transform: scale(0.1); overflow: visible;" id="report_container_1">
+                            <div style="background: #cccccc; height: 100px; width: 100%; position: absolute; left: 0; top: 0;"></div>
+                            <div style=" margin-top: 106px; font-size: 1.5em; color: white; /* text-align: center; */ font-weight: 900; margin-left: 15px; color: #605e5c;">Rekstrargreining <span style="float: right; margin-top: 15px; margin-right: 15px; width: 100px; height: 50px; background: #cccccc; height: 10px; border-radius: 25px;"></span></div>
+                            <div style="margin-top: 15px;">
+                                <span style="margin-left: 15px; background: #86bc25; padding: 5px 15px 5px 15px; color: white; font-weight: bolder; box-shadow: 2px 2px 2px #53565A; ">
+                                    Opna skýrslu
+                                </span>
+                                <span style="float: right; margin-top: 7.5px; margin-right: 15px; width: 120px; height: 50px; background: #cccccc; height: 10px; border-radius: 25px; "></span>
+                            </div>
+                        </div>
+                        <div style="height: 198px; width: 350px; position: absolute; z-index: 255; background: white; top: 400px; left: -50px; box-shadow: 2px 2px 2px #53565A; opacity: 0%; transform: scale(0.1); overflow: visible;" id="report_container_2">
+                            <div style="background: #cccccc; height: 100px; width: 100%; position: absolute; left: 0; top: 0;"></div>
+                            <div style=" margin-top: 106px; font-size: 1.5em; color: white; /* text-align: center; */ font-weight: 900; margin-left: 15px; color: #605e5c;">Efnahagsgreining <span style="float: right; margin-top: 15px; margin-right: 15px; width: 100px; height: 50px; background: #cccccc; height: 10px; border-radius: 25px;"></span></div>
+                            <div style="margin-top: 15px;">
+                                <span style="margin-left: 15px; background: #86bc25; padding: 5px 15px 5px 15px; color: white; font-weight: bolder; box-shadow: 2px 2px 2px #53565A; ">
+                                    Opna skýrslu
+                                </span>
+                                <span style="float: right; margin-top: 7.5px; margin-right: 15px; width: 120px; height: 50px; background: #cccccc; height: 10px; border-radius: 25px; "></span>
+                            </div>
+                        </div>
+                        <div style="height: 198px; width: 350px; position: absolute; z-index: 255; background: white; top: 325px; left: 400px; box-shadow: 2px 2px 2px #53565A; opacity: 0%; transform: scale(0.1); overflow: visible;" id="report_container_3">
+                            <div style="background: #cccccc; height: 100px; width: 100%; position: absolute; left: 0; top: 0;"></div>
+                            <div style=" margin-top: 106px; font-size: 1.5em; color: white; /* text-align: center; */ font-weight: 900; margin-left: 15px; color: #605e5c;">Viðskiptagreining <span style="float: right; margin-top: 15px; margin-right: 15px; width: 100px; height: 50px; background: #cccccc; height: 10px; border-radius: 25px;"></span></div>
+                            <div style="margin-top: 15px;">
+                                <span style="margin-left: 15px; background: #86bc25; padding: 5px 15px 5px 15px; color: white; font-weight: bolder; box-shadow: 2px 2px 2px #53565A; ">
+                                    Opna skýrslu
+                                </span>
+                                <span style="float: right; margin-top: 7.5px; margin-right: 15px; width: 120px; height: 50px; background: #cccccc; height: 10px; border-radius: 25px; "></span>
+                            </div>
+                        </div>
+
+                        <div style="height: 198px; width: 350px; position: absolute; z-index: 255; background: #D0D0CE; top: 500px; left: 300px; opacity: 100%; transform: scale(0.5); z-index: 1; overflow: hidden;" id="report_container_4"></div>
+                        <div style="height: 198px; width: 350px; position: absolute; z-index: 255; background: #D0D0CE; top: 100px; left: -100px; opacity: 80%; transform: scale(0.75); z-index: 1; overflow: hidden; " id="report_container_5"></div>
+                        <div style="height: 198px; width: 350px; position: absolute; z-index: 255; background: #D0D0CE; top: 150px; left: 350px; opacity: 50%; transform: scale(1); z-index: 1; overflow: hidden; " id="report_container_6"></div>
+
+                    </div>
+
+
+                    <div style="position: absolute; background: #f9f9f9; padding: 0px 0px 15px 0px; color: #605e5c; font-weight: 100; z-index: 15; font-size: 1.25em; top: 325px; right: 310px; width: 500px; height: 180px; box-shadow: -3px 3px 5px #53565A; opacity: 0%; border: 1px solid #e5e5e5; letter-spacing: 1px; font-weight: bolder; overflow: hidden;" id="numbers_panel">
+
+                        <div style="transform: translateY(0px)">
+                            <h1 style="text-align: center; line-height: 22.5px; padding: 5px 0 5px 0; position: relative;">
+                                <div id="framlegd_card">
+                                    Framlegð á ári<br />
+                                    <span style="letter-spacing: 0; font-weight: 100;">Borið saman við sl. ári</span>
+                                </div>
+                                <div style=" position: absolute; text-align: center; top: 5px; left: 161px; opacity: 0%;" id="ebitda_card">
+                                    EBITDA á ári<br />
+                                    <span style="letter-spacing: 0; font-weight: 100;">Borið saman við sl. ári</span>
+                                </div>
+                                <div style=" position: absolute; text-align: center; top: 5px; left: 100px; opacity: 0%;" id="ebitda_card_month">
+                                    EBITDA í maí<br />
+                                    <span style="letter-spacing: 0; font-weight: 100;">Borið saman við sama mánuð á sl. ári</span>
+                                </div>
+                            </h1>
+
+
+                            <div style="background: #eaeaea;border-bottom: 1px solid white;padding: 5px 15px 5px 15px;" id="default_key_1">
+                                + Sala
+                                <span style="float: right; font-weight: 100; letter-spacing: 0;" id="year_hide">22,632</span>
+                                <span style="float: right; font-weight: 100; letter-spacing: 0; position: absolute; right: 15px; opacity: 0%;" id="ebitda_card_month">9,052</span> <!---->
+                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #86BC25; width: 80px;" id="year_hide">32,541</span>
+                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #86BC25; width: 80px; opacity: 0%; position: absolute; left: 348px;" id="ebitda_card_month">13,016</span> <!---->
+                            </div>
+                            <div style="background: #eaeaea;border-bottom: 1px solid white;padding: 5px 15px 5px 15px;" id="default_key_2">
+                                + Vörunotkun
+                                <span style="float: right; font-weight: 100; letter-spacing: 0;" id="year_hide">(4,468)</span>
+                                <span style="float: right; font-weight: 100; letter-spacing: 0; position: absolute; right: 15px; opacity: 0%;" id="ebitda_card_month">(1,787)</span> <!---->
+                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px;" id="year_hide">(10,243)</span>
+                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px; opacity: 0%; position: absolute; left: 348px;" id="ebitda_card_month">(4,097)</span> <!---->
+                            </div>
+                            <div style="padding: 5px 15px 5px 15px; color: black; position:absolute; left: 245px;" id="samtals_1">
+                                <span style="float: right; font-weight: 100; letter-spacing: 0;">18,167</span>
+                                <span style="float: right; font-weight: 100; padding-right: 20px; letter-spacing: 0;">22,298</span>
+                                <span style="float: right; padding-right: 15px;">Samtals</span>
+                            </div>
+                            <div style="background: #eaeaea;border-bottom: 1px solid white;padding: 5px 15px 5px 15px; opacity: 0%;" id="reveal_key_1">
+                                + Laun og Launat.gjöld
+                                <span style="float: right; font-weight: 100; letter-spacing: 0;" id="year_hide">(3,579)</span>
+                                <span style="float: right; font-weight: 100; letter-spacing: 0; position: absolute; right: 15px; opacity: 0%;" id="ebitda_card_month">(1,431)</span> <!---->
+                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px;" id="year_hide">(3,668)</span>
+                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px; opacity: 0%; position: absolute; left: 348px;" id="ebitda_card_month">(1,467)</span> <!---->
+                            </div>
+                            <div style="background: #eaeaea; border-bottom: 1px solid white; padding: 5px 15px 5px 15px; opacity: 0%;" id="reveal_key_2">
+                                + Annar Rekstrarkost.
+                                <span style="float: right; font-weight: 100; letter-spacing: 0;" id="year_hide">(7,454)</span>
+                                <span style="float: right; font-weight: 100; letter-spacing: 0; position: absolute; right: 15px; opacity: 0%;" id="ebitda_card_month">(2,981)</span> <!---->
+                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px;" id="year_hide">(1,856)</span>
+                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px; opacity: 0%; position: absolute; left: 348px;" id="ebitda_card_month">(742)</span> <!---->
+                            </div>
+                            <div style="padding: 5px 15px 5px 15px; color: black; position: absolute; left: 245px; opacity: 0%;" id="samtals_2">
+                                <span style="float: right; font-weight: 100; letter-spacing: 0;" id="year_hide">7,131</span>
+                                <span style="float: right; font-weight: 100; letter-spacing: 0; position: absolute; right: 15px; opacity: 0%;" id="ebitda_card_month">2,852</span> <!---->
+                                <span style="float: right; font-weight: 100; margin-right: 20px; letter-spacing: 0;" id="year_hide">16,774</span>
+                                <span style="float: right; font-weight: 100; margin-right: 20px; letter-spacing: 0; opacity: 0%; position: absolute; left: 105px;" id="ebitda_card_month">6,710</span>
+                                <span style="float: right; padding-right: 15px;">Samtals</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div style="position: absolute; width: 1080px; height: 675px; right: -350px; top: 50px; border-radius: 5px; overflow: hidden; box-shadow: 2px 2px 2px black;" id="main_animation_container">
+
+                        <!--
+                                            <div style="height: 200px; width: 350px; position: absolute; z-index: 255; background: red;"></div>
+                        -->
+
+                        <img src="3119186.png" id="mouse" style="top:50px; left:275px; position: absolute; z-index: 15; transform: scale(0.04)" />
+
+                        <div id="sidebar_anim" style="box-shadow: 2px 0px 2px #97999b; z-index: 5; position: absolute; background: #ffffff; left: 0; top: 0; width: 262.5px; /* bottom: 0; */ height: 100%; ">
+                            <div style="font-weight: 0; position: absolute; color: black; padding: 5px; background: #86BC25; color: white; z-index: 5; font-size: 1.5em; left: 33px; top: 25px; width: 200px; height: 78px; box-shadow: 2px 2px 2px #53565A" id="button_1">
+                                <div>Framlegð</div>
+                                <div style="text-align: right;">22.3m</div>
+                            </div>
+                            <div style="font-weight: 0; position: absolute; color: black; padding: 5px; background: #86BC25; color: white; z-index: 5; font-size: 1.5em; left: 33px; top: 125px; width: 200px; height: 78px; box-shadow: 2px 2px 2px #53565A" id="button_2">
+                                <div>EBITDA</div>
+                                <div style="text-align: right;">16.7m</div>
+                            </div>
+                            <div style="font-weight: 0; position: absolute; color: black; background: #0d8390; padding: 5px; color: white; z-index: 5; font-size: 1.5em; left: 33px; top: 350px; width: 200px; height: 78px; box-shadow: 2px 2px 2px #53565A" id="button_blue">
+                                <div>Framlegð%</div>
+                                <div style="text-align: right;">54%</div>
+                            </div>
+                            <div style="font-weight: 0; position: absolute; color: black; background: #0d8390; padding: 5px; color: white; z-index: 5; font-size: 1.5em; left: 33px; top: 450px; width: 200px; height: 78px; box-shadow: 2px 2px 2px #53565A" id="button_blue">
+                                <div>EBITDA%</div>
+                                <div style="text-align: right;">41%</div>
+                            </div>
+                        </div>
+
+                        <table class="charts-css column show-labels show-heading data-spacing-10 show-data-axes" style="color: #605e5c; z-index: 5; opacity: 100%; width: 500px; height: 300px; margin-top: 25px; padding: 15px; background: white; box-shadow: 2px 2px 2px #53565A; transform: rotateX(0);" id="flip_card">
+                            <caption style="font-size: 1.25em; margin-bottom: 15px; border-bottom: 1px solid lightgray;" id="table_header_tekjur"> Tekjur á mánuð </caption>
+                            <caption style="font-size: 1.25em; margin-bottom: 15px; border-bottom: 1px solid lightgray; position:absolute; opacity: 0%;" id="table_header_framlegd"> Framlegð á mánuð </caption>
+                            <caption style="font-size: 1.25em; margin-bottom: 15px; border-bottom: 1px solid lightgray; position: absolute; opacity: 0%;" id="table_header_ebitda"> EBITDA á mánuð </caption>
+                            <tbody style="font-size: 1em; font-weight: bolder;" id="sulurit">
+                                <tr id="opacity_anim">
+                                    <th style="padding-top: 10px;">Mars</th>
+                                    <td style="--size: 0.3; background: #86BC25;">
+                                        <span class="data" id="data_sulurit_1" style="color: white; padding-top: 10px; position: absolute;">2.1m</span> <!--5%-->
+                                        <span class="data" id="data_sulurit_2" style="color: white; padding-top: 10px; position: absolute;">1.1m</span>
+                                        <span class="data" id="data_sulurit_3" style="color: white; padding-top: 10px; position: absolute;">0.8m</span>
+                                    </td>
+                                    <td style="--size: 0.5; background: #b3b3b3;"></td>
+                                </tr>
+                                <tr id="opacity_anim">
+                                    <th style="padding-top: 10px;">Apríl</th>
+                                    <td style="--size: 0.8; background: #86BC25;">
+                                        <span class="data" id="data_sulurit_1" style="color: white; padding-top: 10px; position: absolute;">14.6m</span> <!--30%-->
+                                        <span class="data" id="data_sulurit_2" style="color: white; padding-top: 10px; position: absolute;">6,7m</span>
+                                        <span class="data" id="data_sulurit_3" style="color: white; padding-top: 10px; position: absolute;">5m</span>
+                                    </td>
+                                    <td style="--size: 0.6; background: #b3b3b3;"></td>
+                                </tr>
+                                <tr id="button_3">
+                                    <th style="padding-top: 10px;">Maí</th>
+                                    <td style="--size: 1.0; background: #86BC25;">
+                                        <span class="data" id="data_sulurit_1" style="color: white; padding-top: 10px; position: absolute;">16m</span> <!--40%-->
+                                        <span class="data" id="data_sulurit_2" style="color: white; padding-top: 10px; position: absolute;">8.9m</span>
+                                        <span class="data" id="data_sulurit_3" style="color: white; padding-top: 10px; position: absolute;">6.7m</span>
+                                    </td>
+                                    <td style="--size: 0.7; background: #b3b3b3;"></td>
+                                </tr>
+                                <tr id="opacity_anim">
+                                    <th style="padding-top: 10px;">Júní</th>
+                                    <td style="--size: 0.7; background: #86BC25;">
+                                        <span class="data" id="data_sulurit_1" style="color: white; padding-top: 10px; position: absolute;">8.4m</span> <!--25%-->
+                                        <span class="data" id="data_sulurit_2" style="color: white; padding-top: 10px; position: absolute;">5.6m</span>
+                                        <span class="data" id="data_sulurit_3" style="color: white; padding-top: 10px; position: absolute;">4.2m</span>
+                                    </td>
+                                    <td style="--size: 0.4; background: #b3b3b3;"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="charts-css line show-data-axes show-heading  multiple" id="my-chart" style="color: #605e5c; z-index: 5; opacity: 100%; width: 500px; height: 300px; margin-top: 25px; padding: 25px 70px 25px 70px; background: white; box-shadow: 2px 2px 2px #53565A">
+                            <caption style="font-size: 1.25em; margin-bottom: 15px; border-bottom: 1px solid lightgray;" id="table_header_tekjur"> Tekjur% á mánuð </caption>
+                            <caption style="font-size: 1.25em; margin-bottom: 15px; border-bottom: 1px solid lightgray; position:absolute; opacity: 0%; left: 0;" id="table_header_framlegd"> Framlegð% á mánuð </caption>
+                            <caption style="font-size: 1.25em; margin-bottom: 15px; border-bottom: 1px solid lightgray; position: absolute; opacity: 0%; left: 0;" id="table_header_ebitda"> EBITDA% á mánuð </caption>
+                            <tbody style="--line-size: 7px;" id="chart-body">
+                                <tr style="padding: 10px; margin-right: -1px;">
+                                    <td style="--start: 0.0; --size: 0.4; --color: #0d8390;" id="blue"></td>
+                                    <td style="--start: 0.2; --size: 0.6; --color: #b3b3b3;" id="gray"></td>
+                                </tr>
+                                <tr style="padding: 10px; margin-right: -1px;">
+                                    <td style="--start: 0.4; --size: 0.2; --color: #0d8390;" id="blue"></td>
+                                    <td style="--start: 0.6; --size: 0.2; --color: #b3b3b3;" id="gray"></td>
+                                </tr>
+                                <tr style="padding: 10px; margin-right: -1px;">
+                                    <td style="--start: 0.2; --size: 0.9; --color: #0d8390;" id="blue"></td>
+                                    <td style="--start: 0.2; --size: 0.5; --color: #b3b3b3;" id="gray"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="grid_three_by_three" style="position: absolute; width: 1080px; height: 675px; top: 0; z-index: 1;">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col__1/2">
+                    <div class="col__full media__full" style="background-image: url(AdobeStock_209254754.jpeg); background-size: cover; background-color: black; opacity: 19%"></div>
+                    <!--<div class="col__full media__full" style=" background: url(iceland_background.png) bottom; bottom: 0; background-size: 100%; background-color: #86BC25; background-repeat: no-repeat;"></div>-->
+                    <!--<div class="col__full media__full" style="background-size: cover; background-color: #86BC25; "></div>-->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="secondary_navbar_container" style="background: black; display: inline-block; width: 100%;">
+        <ul id="secondary_navbar" style="box-shadow: 0px 1px 2px lightgra;">
+            <li><button class="tablinks active" onclick="openCity(event, 'home')">Heim</button></li>
+            <li><button class="tablinks" onclick="openCity(event, 'qaa')">Spurt & svarað</button></li>
+            <li><button class="tablinks" onclick="openCity(event, 'price')">Verðskrá</button></li>
+            <li><button class="tablinks" onclick="openCity(event, 'about')">Um okkur</button></li>
+        </ul>
+    </div>
+
+    <div id="home" class="tabcontent" style="display: block">
+        <div class="pd-container" style="color: white; padding-bottom: 48px; margin-top: -50px; background: white; ">
+            <div class="pd-row" style="padding-bottom: 75px;">
+                <div class="w-full pd-content">
+
+                    <!--
+    <div style="padding-top: 20px; width: 45%; height: 300px; text-align: left; float: left; margin-top: 60px; margin-right: 150px;">
+        <div style="width: 100%; line-height: 52.5px;">
+            <h1 class="font-bold" style="font-size: 3.1em; ">
+                <span style="background: black; padding: 15px; line-height: 90px;">Góð innsýn í reksturinn</span>
+            </h1>
+        </div>
+        <p style=" width: 100%; font-size: 1.5em; color: white; margin-top: 25px; word-spacing: 5px; /* font-weight: bolder; */">
+            Greiningarlausnin okkar gerir þér kleift að kanna og skilja gögnin þín með nýjum og einstökum aðferðum og veita þér aðgerðarhæfa innsýn og ráðleggingar.
+        </p>
+    </div>
+                    <div style="width: 450px; height: 330px; float: left; margin-top: 48px;">
+                        <img src="Logic_myndir/magnify.PNG" style="height: 100%;">
+                    </div>
+                    -->
+
+                    <div style="padding-top: 1px;">
+                        <img src="Logic_myndir/try_it_arrow.png" width="50" style="float: left; margin-top: 100px; position: relative; top:35px; left: 815px;">
+                        <div style="width: 95%; margin-top: 100px; margin-right: 5px; text-align: right; font-size: 3em; font-weight: bolder; float: left;"> <span style="background: black; padding: 10px;">Prófaðu núna</span></div>
+                        <iframe style="box-shadow: 2px 2px 5px rgb(0 0 0 / 50%); background: #D0D0CE; margin-left: -244px; " title="Fjárhagsgreining Demo Deildir - Tekjugreining" width="1650" height="990" src="https://app.powerbi.com/view?r=eyJrIjoiZDg3ZjU5MjktMjE3Mi00N2U5LWI5OWItMGU3YTMyYzljY2UxIiwidCI6IjQwMjY1ZWI5LTY3ZTQtNGYxYi1iMDMyLTEzNGM5NjY1MWYwNSIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+
+                    </div>
+                    <div style="text-align: center;">
+                        <button onclick="window.open('https://deloittereports.is/Home/Booking','_blank');" style="border: 2px solid #86BC25; background: #86BC25; font-size: 1.25em; padding: 10px; color: white; font-weight: bolder; margin: 64px 25px 0 0; letter-spacing: 1.5px; box-shadow: 3px 3px 1px black; width: 175px; "><a href="javascript:void(0);">Bóka Demo</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pd-container">
+
+            <div class="pd-row" style="margin-bottom: 550px; margin-top: 48px;">
+                <div class="w-full pd-content">
+                    <div style="position: absolute;">
+                        <div style="width: 400px; background: #f6f6f6; float: left;">
+                            <img src="Logic_myndir/Allar_skyrslur_3.PNG" style="box-shadow: 0 2px 2px #a0a0a0; width: 400px; position: absolute; left: -50px; top: 50px; z-index: 2; box-shadow: 2px 2px 3px #53565A;">
+                        </div>
+                        <div style="width: 400px; background: #f6f6f6; float: left; box-shadow: 2px 2px 3px #53565A;">
+                            <img src="Logic_myndir/Allar_skyrslur_2.PNG" style="box-shadow: 0 2px 2px #a0a0a0; width: 400px; position: absolute; top: -20px; box-shadow: 2px 2px 3px #53565A;">
+                        </div>
+                        <div style="width: 400px; background: #f6f6f6; float: left; box-shadow: 2px 2px 3px #53565A;">
+                            <img src="Logic_myndir/Allar_skyrslur_1.PNG" style="box-shadow: 0 2px 2px #a0a0a0; width: 400px; position: absolute; left: 75px; top: 120px; z-index: 4; box-shadow: 2px 2px 3px #53565A;">
+                        </div>
+                    </div>
+                    <div style="padding-top:25px; width: 45%; height: 300px; text-align: left; float: left; margin-left: 650px;">
+                        <div style="width: 80%; line-height: 52.5px;">
+                            <h1 class="font-bold" style="font-size: 3.1em; ">
+                                <span style="">Allar skýrslur á einum stað</span>
+                            </h1>
+                        </div>
+                        <p style="width: 100%; font-size: 1.5em; margin-top: 25px; color: #53565A; word-spacing: 5px; ">
+                            Í stað þess að leita í möppum eða kerfum geturðu auðveldlega nálgast allar upplýsingar sem þú þarft á einum stað og á sama tíma aukið skilvirkni og hagræða vinnuflæði.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pd-row" style="padding-bottom: 75px; margin-bottom: 400px;">
+                <div class="w-full pd-content">
+
+                    <div style="padding-top:25px; width: 45%; height: 300px; text-align: left; float: left; margin-right: 150px;">
+                        <div style="width: 100%; line-height: 52.5px;">
+                            <h1 class="font-bold" style="font-size: 3.1em;">
+                                Sérsniðnar skýrslur
+                            </h1>
+                        </div>
+                        <p style="width: 100%; font-size: 1.5em; color: #53565A; padding-top: 25px;">
+                            Komdu með tillögu um breytingar sem henta þér og þínum starfsmönnum og við mótum þína greiningu eftir því.
+                        </p>
+                    </div>
+                    <img src="Logic_myndir/custom.png" style=" width: 350px; object-fit: cover; float: left; margin-top: -0px;">
+                </div>
+            </div>
+            <div class="pd-row" style="padding-bottom: 75px;">
+                <div class="w-full pd-content">
+                    <div style="position: absolute;">
+                        <img src="Logic_myndir/user-friendly.png" style="width: 325px; margin-left: 150px; margin-top: 0px;">
+                    </div>
+                    <div style="width: 45%; height: 300px; text-align: left; margin-left: 650px;">
+                        <div style="width: 100%; line-height: 52.5px;">
+                            <h1 class="font-bold" style="font-size: 3.1em;">
+                                Notendavænt
+                            </h1>
+                        </div>
+                        <p style="width: 100%; font-size: 1.5em; color: #53565A; padding-top: 25px; word-spacing: 5px; ">
+                            Hönnun okkar er auðveld í notkun og skiljanleg, á sama tíma og hún býður upp á alla nauðsynlega eiginleika sem þú þarft til að ná markmiðum þínum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="pd-row" style="margin-top: 75px;">
+                <div class="w-full pd-content" style="text-align: center;">
+                    <button onclick="window.open('https://deloittereports.is/Home/Booking','_blank');" style="background: #86bc25; font-size: 1.5em; padding: 10px; color: white; font-weight: bolder; margin: 32px 0px 0 0; letter-spacing: 1.5px; border: 1px solid #86BC25; box-shadow: 3px 3px 1px black; width: 200px; border: 1px solid #97999B; "><a href="javascript:void(0);">Bóka Demo</a></button>
+
+                </div>
+            </div>
+            <div class="pd-row" style="margin-top: 75px;">
+                <div class="w-full pd-content" style="text-align: center; border-bottom: 1px solid #BBBCBC; line-height: 0.1em; margin: 10px 0 20px; font-size: 2em; font-weight: bolder;">
+                    <span style="background: white; padding: 0 15px;">eða</span>
+                </div>
+            </div>
+            <div class="pd-row" style="padding-bottom: 75px; margin-top: 100px; height: 375px; background: #86BC25; overflow: visible; margin-bottom: 200px;">
+                <div class="w-full pd-content">
+                    <div style="border-radius: 5px; width: 425px; height: 425px; box-shadow: 1px 1px 5px black; overflow: hidden; float: left; margin-left: -25px; margin-top: -27.5px;">
+                        <img src="https://www2.deloitte.com/content/dam/html/is/ymir-orn-finnbogason.jpg" style=" object-fit: cover; object-position: left 50%; height: 100%;" />
+                    </div>
+
+                    <!--
+            <div style="width: 50%; height: 400px; line-height: 80px; font-family: 'Open Sans', Cambria, Cochin, Georgia, Times, Times New Roman, serif, sans-serif; float: left; margin-left: 50px; padding-top: 25px;">
+                <h1 style="font-size: 1.5em; line-height: 35px;">
+                    <i>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"</i>
+                    <div style="font-family: 'Open Sans', Calibri, sans-serif; font-weight: bolder;  padding-top: 25px;">- Ýmir Örn Finnbogason, <br /> forstöðumaður viðskiptagreindar</div>
+                </h1>
+                <div style="font-size: 2.5em;">
+                    Spjöllum saman í síma
+                </div>
+                <h1 class="font-bold" style="font-size: 4em;">
+                    <span style="background: black; padding: 15px; color: white;">8951744</span>
+                </h1>
+            </div>
+                -->
+
+                    <div style="width: 55%; height: 400px; font-family: 'Open Sans', Calibri, sans-serif; float: left; margin-left: 55px; padding-top: 90px;">
+                        <h1 style="line-height: 21px; letter-spacing: 2.5px;">
+                            <div style="font-size: 3em;">
+                                <span style="background: white; padding: 15px; font-weight: bolder;">Hringið í karlinn! </span>
+                            </div>
+                            <h1 class="font-bold" style="font-size: 4em; line-height: 175px;">
+                                <span style="background: black; padding: 15px; color: white;">8951744</span>
+                            </h1>
+                        </h1>
+                        <h1 style="font-size: 1.5em; line-height: 35px; text-align: right;">
+                            <div style="font-family: 'Open Sans', Calibri, sans-serif;  margin-top: -25px; color: white;">- Ýmir Örn Finnbogason, <br /> Forstöðumaður viðskiptagreindar svið</div>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="qaa" class="tabcontent">
+        <section class="pd-container accordion__block" style="padding-bottom: 175px; padding-top:100px;">
+            <div class="pd-row">
+                <div class="w-full">
+
+                    <div class="accordion__container" style="border-top: none;">
+                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+                            <button @click="accordionOpen = !accordionOpen" class="accordion">
+
+                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                                    Hvað er þetta?
+                                </h3>
+                                <div style="position:absolute;">
+                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </button>
+                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                                <div class="">
+                                    <div class="rich__body pd-wysiwyg  pd-dark">
+                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">Þetta</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__container" style="border-top: none;">
+                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+                            <button @click="accordionOpen = !accordionOpen" class="accordion">
+
+                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                                    Hvað er þetta?
+                                </h3>
+                                <div style="position:absolute;">
+                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </button>
+                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                                <div class="">
+                                    <div class="rich__body pd-wysiwyg  pd-dark">
+                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">Þetta</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__container" style="border-top: none;">
+                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+                            <button @click="accordionOpen = !accordionOpen" class="accordion">
+
+                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                                    Hvað er þetta?
+                                </h3>
+                                <div style="position:absolute;">
+                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </button>
+                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                                <div class="">
+                                    <div class="rich__body pd-wysiwyg  pd-dark">
+                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">Þetta</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__container" style="border-top: none;">
+                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+                            <button @click="accordionOpen = !accordionOpen" class="accordion">
+
+                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                                    Hvað er þetta?
+                                </h3>
+                                <div style="position:absolute;">
+                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </button>
+                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                                <div class="">
+                                    <div class="rich__body pd-wysiwyg  pd-dark">
+                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">Þetta</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__container" style="border-top: none;">
+                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+                            <button @click="accordionOpen = !accordionOpen" class="accordion">
+
+                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                                    Hvað er þetta?
+                                </h3>
+                                <div style="position:absolute;">
+                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </button>
+                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                                <div class="">
+                                    <div class="rich__body pd-wysiwyg  pd-dark">
+                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">Þetta</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__container" style="border-top: none;">
+                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+                            <button @click="accordionOpen = !accordionOpen" class="accordion">
+
+                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                                    Hvað er þetta?
+                                </h3>
+                                <div style="position:absolute;">
+                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </button>
+                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                                <div class="">
+                                    <div class="rich__body pd-wysiwyg  pd-dark">
+                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">Þetta</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <div id="price" class="tabcontent">
+        <div class="pd-container">
+            <div class="pd-row" style="margin-bottom: 550px; margin-top: 75px;">
+                <div class="w-full pd-content">
+
+                    <div style="width: 100%; height: 960px; left: 0; top: 960px; position: absolute; z-index: -5;"></div>
+                    <div class="columns" style="padding: 0; position: relative;">
+                        <div style="height: 685px;  background: white; box-shadow: 2px 2px 5px rgb(0 0 0 / 0.6); ">
+                            <h1 style="text-align: left; font-weight: bolder; font-size: 2em; padding: 35px; color: black; line-height: 30px;">
+                                Basic<br />
+                                     <span style="font-weight: 400; font-size: 0.55em; color: #75787B; ">Byrjaðu á mikilvægustu upplýsingunum fyrir þitt fyrirtæki.</span>
+                            </h1>
+                            <h1 style="text-align: left; font-weight: bolder; font-size: 2.5em; padding: 0px 35px; line-height: 37.5px;">14.995 kr.<span style="font-size: 0.5em; color: #75787B; "> / mán.</span></h1>
+                            
+                            <div style="padding: 35px 35px;">
+                                <ul id="pricing_points" style="list-style-type: none; margin: 0; padding: 0;">
+                                    <li>Áskrift að rekstrargreiningu</li>
+                                    <li>Vikulegar gagnauppfærslur</li>
+                                    <li>Lykilmælikvarðar</li>
+                                    <li>Samanburður sögulegra gagna</li>
+                                    <li>Aðgengi fyrir bókara</li>
+                                </ul>
+                            </div>
+                            <div style="text-align: center; padding: 0 35px; position: absolute; bottom: 50px; width: 100%;">
+                                <button onclick="window.open('https://deloittereports.is/','_blank');" style=" background: #86bc25; font-size: 1.25em; padding: 10px 0 10px 0; color: white; font-weight: bolder; margin-top: 32px; letter-spacing: 1px; border: 1px solid #86BC25; box-shadow: 3px 3px 1px black; width: 100%; "><a href="javascript:void(0);">Bóka Demo</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns" style="padding: 0; position: relative;">
+                        <div style="height: 685px; box-shadow: 2px 2px 5px rgb(0 0 0 / 0.6); background: white; ">
+                            <h1 style="text-align: left; font-weight: bolder; font-size: 2em; padding: 35px; color: black; line-height: 30px;">
+                                Premium<br />
+                                       <span style="font-weight: 400; font-size: 0.55em; color: #75787B; ">Upplifðu mikilvægi gagna fyrir ört stækkandi fyrirtæki.</span>
+                            </h1>
+                            <h1 style="text-align: left; font-weight: bolder; font-size: 2.5em; padding: 0px 35px; line-height: 37.5px;">49.995 kr.<span style="font-size: 0.5em; color: #75787B; "> / mán.</span></h1>
+                            <div style="padding: 18px 35px; font-size: 1.5em; font-weight: bolder; text-decoration: underline;">Sama og í Basic, að auki:</div>
+                            <div style="padding: 0px 35px;">
+                                
+                                <ul id="pricing_points" style="list-style-type: none; margin: 0; padding: 0;">
+                                    <li>Áskrift að sölugreiningu og efnahagsgreiningu</li>
+                                    <li>Allt að 10 notendur</li>
+                                    <li>Daglegar gagnauppfærslur</li>
+                                    <li>Samanburður við rekstraráætlun og deildir/rekstrareiningar</li>
+                                    <li>Aðgangsstýring gagna</li>
+                                </ul>
+                            </div>
+                            <div style="text-align: center; padding: 0 35px; position: absolute; bottom: 50px; width: 100%;">
+                                <button onclick="window.open('https://deloittereports.is/','_blank');" style=" background: #86bc25; font-size: 1.25em; padding: 10px 0 10px 0; color: white; font-weight: bolder; margin-top: 32px; letter-spacing: 1px; border: 1px solid #86BC25; box-shadow: 3px 3px 1px black; width: 100%; "><a href="javascript:void(0);">Bóka Demo</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns" style="padding: 0; position: relative;">
+                        <div style="height: 685px;  background: white; box-shadow: 2px 2px 5px rgb(0 0 0 / 0.6); ">
+                            <h1 style="text-align: left; font-weight: bolder; font-size: 2em; padding: 35px; color: black; line-height: 30px;">
+                                Portfolio<br />
+                                         <span style="font-weight: 400; font-size: 0.55em; color: #75787B; ">Hámarkaðu möguleika samstæðunnar með fullkomnri yfirsýn.</span>
+                            </h1>
+                            <h1 style="text-align: left; font-weight: bolder; font-size: 2.5em; padding: 0px 35px; line-height: 37.5px;">Fá tilboð</h1>
+                            <div style="padding: 18px 35px; font-size: 1.5em; font-weight: bolder; text-decoration: underline;">Sama og í Premium, að auki:</div>
+                            <div style="padding: 0px 35px;">
+                                <ul id="pricing_points" style="list-style-type: none; margin: 0; padding: 0;">
+                                    <li>Ótakmarkaður fjöldi fyrirtækja</li>
+                                    <li>Ótakmarkaður fjöldi notenda</li>
+                                    <li>Þinn ráðgjafi</li>
+                                    <li>Kennsla og þjálfun</li>
+                                </ul>
+                            </div>
+                            <div style="text-align: center; padding: 0 35px; position: absolute; bottom: 50px; width: 100%;">
+                                <button onclick="window.open('https://deloittereports.is/','_blank');" style=" background: #86bc25; font-size: 1.25em; padding: 10px 0 10px 0; color: white; font-weight: bolder; margin-top: 32px; letter-spacing: 1px; border: 1px solid #86BC25; box-shadow: 3px 3px 1px black; width: 100%; "><a href="javascript:void(0);">Bóka Demo</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="pd-row" style="margin-top: 980px;">
+                <div class="w-full pd-content" style="text-align: center;">
+                    <table id="feature_list" style="font-size: 1em;">
+                        <tr>
+                            <th></th>
+                            <th style="width: 250px;">Basic</th>
+                            <th style="width: 250px;">Premium</th>
+                            <th style="width: 250px;">Portfolio</th>
+                        </tr>
+                        <tr>
+                            <td id="Title">NOTKUN</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="feat_row">
+                            <td>
+                                Fjöldi fyrirtækja
+                            </td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Ótakmarkað</td>
+                        </tr>
+                        <tr id="feat_row">
+                            <td>
+                                Fjöldi notenda
+                            </td>
+                            <td>1</td>
+                            <td>10</td>
+                            <td>Ótakmarkað</td>
+                        </tr>
+                        <tr id="feat_row">
+                            <td>
+                                <div class="tooltip">
+                                    Aðgengi fyrir bókara
+                                    <span class="tooltiptext">
+                                        Allir geta boðið bókara að hafa aðgengi að greiningum.
+                                    </span>
+                                </div>
+                            </td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                        </tr>
+                        <tr id="feat_row">
+                            <td>
+                                <div class="tooltip">
+                                    Notendahópar
+                                    <span class="tooltiptext">
+                                        Auðveldlega skiptu niður notendum í hópa. Aðgangsstýring á greiningar.
+                                    </span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td id="Title">GREININGAR</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="feat_row">
+                            <td>
+                                <div class="tooltip">
+                                    Tegundir greininga
+                                    <span class="tooltiptext">
+                                        Við bjóðum uppá staðlaðar lausnir sem þú getur byrjað að nota innan 24 tíma.
+                                    </span>
+                                </div>
+                            </td>
+                            <td>Rekstrar</td>
+                            <td>Rekstrar, Efnahags, Sölu</td>
+                            <td>Rekstrar, Efnahags, Sölu</td>
+                        </tr>
+                        <tr id="feat_row">
+                            <td>
+                                Áskrift á nýjar greiningar
+                            </td>
+                            <td></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                        </tr>
+                        <tr id="feat_row">
+                            <td>
+                                <div class="tooltip">
+                                    Uppfærslur gagna
+                                    <span class="tooltiptext">
+                                        Hversu oft nýjustu gögnin eru sótt úr bókhaldskerfinu fer eftir áskriftarleið.
+                                    </span>
+                                </div>
+                            </td>
+                            <td>Vikulega</td>
+                            <td>Daglega</td>
+                            <td>Daglega</td>
+                        </tr>
+                        <tr id="feat_row">
+                            <td>
+                                <div class="tooltip">
+                                    Aðgangsstýring gagna
+                                    <span class="tooltiptext">
+                                        Aðgangsstýringar stjórna því hverjir sjá hvaða gögn. Dæmi um aðgangsstýringu er þegar deildarstjóri sér aðeins rekstrartölur fyrir sína deild en ekki fyrirtækið í heild sinni.
+                                    </span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                        </tr>
+                        <!--
+    <tr id="feat_row">
+        <td>
+            <div class="tooltip">
+                Sérsmíði
+                <span class="tooltiptext">
+                    Komdu með tillögu um breytingar sem henta þér og þínum starfsmönnum og við mótum þína greiningu eftir því.
+                </span>
+            </div>
+        </td>
+        <td></td>
+        <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+        <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+    </tr>
+        -->
+                        <tr id="feat_row">
+                            <td>
+                                <div class="tooltip">
+                                    Sérsmíði á lyklamöppun
+                                    <span class="tooltiptext">
+                                        Þú segir til um hvaða bókhaldslyklar tilheyra hvaða flokkum.
+                                    </span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                        </tr>
+                        <tr id="feat_row">
+                            <td>
+                                <div class="tooltip">
+                                    Lykilmælikvarðar
+                                    <span class="tooltiptext">
+                                        Tekju-, hagnaðar- og kostnaðarhlutfallagreining.
+                                    </span>
+                                </div>
+                            </td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                        </tr>
+                        <tr id="feat_row">
+                            <td>Samanburður sögulegra gagna</td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                        </tr>
+                        <tr id="feat_row">
+                            <td>Samanburður við áætlun</td>
+                            <td></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                        </tr>
+                        <tr id="feat_row">
+                            <td>Samanburður deilda</td>
+                            <td></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                        </tr>
+                        <tr id="feat_row">
+                            <td>
+                                <div class="tooltip">
+                                    Færa í Excel
+                                    <span class="tooltiptext">
+                                        Þú getur fært gögn úr kerfinu yfir í Excel.
+                                    </span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                        </tr>
+                        <!--
+    <tr id="feat_row">
+        <td>
+            <div class="tooltip">
+                Tilkynningar
+                <span class="tooltiptext">
+                    Innbyggðar tilkynningar ef tölur stemma ekki við hrá gögn tekin beint úr bókhaldskerfinu.
+                </span>
+            </div>
+        </td>
+        <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+        <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+        <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+    </tr>
+        -->
+                        <tr id="feat_row">
+                            <td>
+                                <div class="tooltip">
+                                    Spjallsvæði
+                                    <span class="tooltiptext">
+                                        Hver greining er tengd við sitt eigið spjallsvæði til að auðvelda upplýsingaflæði milli notenda, bókara og Deloitte. 
+                                    </span>
+                                </div>
+                            </td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td id="Title">AÐSTOÐ</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="feat_row">
+                            <td>Hjálp</td>
+                            <td>Þjónustuborð</td>
+                            <td>Tölvupóstur</td>
+                            <td>Þinn ráðgjafi</td>
+                        </tr>
+                        <tr id="feat_row">
+                            <td>Kennsla</td>
+                            <td>Hjálparskjöl</td>
+                            <td>Teams fundir</td>
+                            <td>Í persónu</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="pd-row" style="margin-top: 150px;">
+                <div class="w-full pd-content" style="text-align: center;">
+                    <button onclick="window.open('https://deloittereports.is/Home/Booking','_blank');" style="background: #86bc25; font-size: 1.5em; padding: 10px; color: white; font-weight: bolder; margin: 32px 0px 0 0; letter-spacing: 1.5px; border: 1px solid #86BC25; box-shadow: 3px 3px 1px black; width: 200px; border: 1px solid #97999B; "><a href="javascript:void(0);">Bóka Demo</a></button>
+                </div>
+            </div>
+            <div class="pd-row" style="margin-top: 75px;">
+                <div class="w-full pd-content" style="text-align: center; border-bottom: 1px solid #BBBCBC; line-height: 0.1em; margin: 10px 0 20px; font-size: 2em; font-weight: bolder;">
+                    <span style="background: white; padding: 0 15px;">eða</span>
+                </div>
+            </div>
+            <div class="pd-row" style="padding-bottom: 75px; margin-top: 100px; height: 375px; background: #86BC25; overflow: visible;  margin-bottom: 200px;">
+                <div class="w-full pd-content">
+                    <div style="border-radius: 5px; width: 425px; height: 425px; box-shadow: 1px 1px 5px black; overflow: hidden; float: left; margin-left: -25px; margin-top: -27.5px;">
+                        <img src="https://www2.deloitte.com/content/dam/html/is/ymir-orn-finnbogason.jpg" style=" object-fit: cover; object-position: left 50%; height: 100%;" />
+                    </div>
+
+                    <!--
+            <div style="width: 50%; height: 400px; line-height: 80px; font-family: 'Open Sans', Cambria, Cochin, Georgia, Times, Times New Roman, serif, sans-serif; float: left; margin-left: 50px; padding-top: 25px;">
+                <h1 style="font-size: 1.5em; line-height: 35px;">
+                    <i>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"</i>
+                    <div style="font-family: 'Open Sans', Calibri, sans-serif; font-weight: bolder;  padding-top: 25px;">- Ýmir Örn Finnbogason, <br /> forstöðumaður viðskiptagreindar</div>
+                </h1>
+                <div style="font-size: 2.5em;">
+                    Spjöllum saman í síma
+                </div>
+                <h1 class="font-bold" style="font-size: 4em;">
+                    <span style="background: black; padding: 15px; color: white;">8951744</span>
+                </h1>
+            </div>
+                -->
+
+                    <div style="width: 55%; height: 400px; font-family: 'Open Sans', Calibri, sans-serif; float: left; margin-left: 55px; padding-top: 90px;">
+                        <h1 style="line-height: 21px; letter-spacing: 2.5px;">
+                            <div style="font-size: 3em;">
+                                <span style="background: white; padding: 15px; font-weight: bolder;">Hringið í karlinn! </span>
+                            </div>
+                            <h1 class="font-bold" style="font-size: 4em; line-height: 175px;">
+                                <span style="background: black; padding: 15px; color: white;">8951744</span>
+                            </h1>
+                        </h1>
+                        <h1 style="font-size: 1.5em; line-height: 35px; text-align: right;">
+                            <div style="font-family: 'Open Sans', Calibri, sans-serif;  margin-top: -25px; color: white;">- Ýmir Örn Finnbogason, <br /> Forstöðumaður viðskiptagreindar svið</div>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="tabcontent">
+        <div class="pd-container">
+            <div class="pd-row" style="margin-bottom: 550px;">
+                <div class="w-full pd-content">
+                    <div style="padding-top:25px; width: 50%; height: 300px; text-align: left;">
+                        <div style="width: 80%; line-height: 52.5px;">
+                            <h1 class="font-bold" style="font-size: 3.1em; ">
+                                <span style="">Viðskiptagreind</span>
+                            </h1>
+                            <span style=" font-size: 2em; color: #53565A;">Business Intelligence</span>
+                        </div>
+                        <p style="width: 100%; font-size: 1.5em; margin-top: 25px; color: #53565A; word-spacing: 5px; ">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+        <section class="pd-container text__block pd-blocks-top-large pd-blocks-bottom-standard top_bottom_shadow" style="background: #86BC25;">
+            <div class="pd-row" style="padding-bottom: 75px;" >
+                <div class="w-full pd-content">
+                  <h1 class="font-bold" style="font-size: 3.1em; text-align: center; color: white; letter-spacing: 5px; padding-bottom: 45px;">
+                      <span style="background: black; font-family: inherit; padding: 15px; box-shadow: 3px 3px 1px white;">Prufu skýrslur</span>
+                  </h1>
+                  <div style="background: white;">
+                    <iframe title="Fasteignamælaborð Deloitte" src="https://app.powerbi.com/view?r=eyJrIjoiNDlmOTc3MGEtZDcwYS00NzE1LTljZDAtMTU4ODcyNGY3YzBhIiwidCI6IjQwMjY1ZWI5LTY3ZTQtNGYxYi1iMDMyLTEzNGM5NjY1MWYwNSIsImMiOjh9" frameborder="0" scrolling="no" id="preview-frame-iframeComponentId1724308992" data-dimension="500-700" style="height: 720px; width: 100%; box-shadow: 1px 1px 3.5px #53565A;"></iframe>
+                  </div>
+                </div>
+            </div>
+        </section>
+    -->
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=NodeList.prototype.forEach%2CElement.prototype.before%2CArray.prototype.forEach%2CArray.prototype.find%2CPromise%2CObject.assign"></script>
+
+
+    <script src="https://www2.deloitte.com/content/dam/html/shared/transform-transformation/js/classList.min.js"></script>
+    <script src="https://www2.deloitte.com/content/dam/html/shared/transform-transformation/js/classListPoly.min.js"></script>
+
+    <script src="https://www2.deloitte.com/content/dam/html/shared/transform-transformation/js/search.min.js"></script>
+    <script src="https://www2.deloitte.com/content/dam/html/shared/transform-transformation/js/searcharticles.min.js"></script>
+
+    <script type="module" src="https://www2.deloitte.com/content/dam/html/shared/transform-transformation/js/alpine.min.js?v=3"></script>
+    <script src="https://www2.deloitte.com/content/dam/html/shared/transform-transformation/js/flickity.min.js"></script>
+    <script src="https://www2.deloitte.com/content/dam/html/shared/transform-transformation/js/app.min.js"></script>
