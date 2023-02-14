@@ -6,21 +6,22 @@
 
 <style>
     #book_demo {
-        border: 2px solid #86BC25;
-        background: #86BC25;
+        border: 2px solid white;
+        background: white;
         font-size: 1.25em;
         padding: 10px;
-        color: white;
+        color: black;
         font-weight: bolder;
-        margin: 32px 25px 0 0;
+        margin: 5px 25px 0 0;
         letter-spacing: 1.5px;
-        box-shadow: 3px 3px 1px white;
+        box-shadow: 3px 3px 2px rgb(0 0 0 / 40%);
         width: 175px;
     }
-    #book_demo:hover {
-        background-color: #6f9e18;
-        border: 2px solid #6f9e18;
-    }
+
+        #book_demo:hover {
+            background-color: #ededed;
+            border: 2px solid #ededed;
+        }
 
     #pricing_points li:before {
         content: '✓';
@@ -30,13 +31,16 @@
     html {
         font-family: 'Open Sans', Calibri, sans-serif;
     }
+
     .top_bottom_shadow {
         box-shadow: 0px -2px 5px #53565A, 0px 2px 5px #53565A;
     }
+
     .grid_three_by_three {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+
         .grid_three_by_three div {
             padding: 10px;
             background-color: #f6f6f6;
@@ -46,36 +50,43 @@
         animation: main_mouse 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #button_blue {
         animation: hide_buttons 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #button_1 {
         animation: click_anim_1 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #button_2 {
         animation: click_anim_2 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #button_3 {
         animation: click_anim_3 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #sulurit td {
         animation: sulurit 15s ease-in-out infinite;
         animation-fill-mode: forwards;
         transform-origin: bottom;
     }
 
-    #sulurit td #data_sulurit_1 {
-        animation: sulurit_number_1 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
-    #sulurit td #data_sulurit_2 {
-        animation: sulurit_number_2 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #sulurit td #data_sulurit_1 {
+            animation: sulurit_number_1 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
+
+        #sulurit td #data_sulurit_2 {
+            animation: sulurit_number_2 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
+
         #sulurit td #data_sulurit_3 {
             animation: sulurit_number_3 15s ease-in-out infinite;
             animation-fill-mode: forwards;
@@ -87,62 +98,77 @@
         animation: linurit_blatt 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #gray {
         animation: linurit_gratt 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #opacity_anim {
         animation: decrease_opac 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #default_key_1, #default_key_2 {
         animation: hide_default_keys 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #reveal_key_1, #reveal_key_2 {
         animation: reveal_all_keys 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #samtals_1 {
         animation: samtals_1 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #samtals_2 {
         animation: samtals_2 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #table_header_tekjur {
         animation: header_click_1 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #table_header_framlegd {
         animation: header_click_2 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #table_header_ebitda {
         animation: header_click_3 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #framlegd_card {
         animation: card_title_1 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #ebitda_card { /* EBITDA í ár*/
         animation: card_title_2 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #ebitda_card_month { /* EBITDA í maí*/
         animation: card_title_3 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #year_hide {
         animation: numbers_1 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #numbers_panel {
         animation: flip_panel 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #main_animation_container {
         animation: flip_container 15s ease-in-out infinite;
         animation-fill-mode: forwards;
@@ -152,11 +178,13 @@
         animation: hide_sidebar 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #flip_card {
         border: 1px solid #e8e8e8;
         animation: hide_tables 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #my-chart {
         border: 1px solid #e8e8e8;
         animation: hide_tables 15s ease-in-out infinite;
@@ -167,25 +195,30 @@
         animation: circle_card_1 15s linear infinite;
         animation-fill-mode: forwards;
     }
+
     #report_container_2 {
         animation: circle_card_2 15s ease-in-out infinite;
         animation-fill-mode: forwards;
     }
+
     #report_container_3 {
         animation: circle_card_3 15s ease-in-out infinite;
         animation-fill-mode: forwards;
         animation-delay: 0.3s;
     }
+
     #report_container_4 {
         animation: circle_card_4 15s ease-in-out infinite;
         animation-fill-mode: forwards;
         animation-delay: 0.33s;
     }
+
     #report_container_5 {
         animation: circle_card_5 15s ease-in-out infinite;
         animation-fill-mode: forwards;
         animation-delay: 0.66s;
     }
+
     #report_container_6 {
         animation: circle_card_6 15s ease-in-out infinite;
         animation-fill-mode: forwards;
@@ -204,24 +237,27 @@
         justify-content: center;
         display: flex;
     }
+
     .tabcontent {
         display: none;
         //-webkit-animation: fadeEffect 0.2s;
-       //animation: fadeEffect 0.2s;
+        //animation: fadeEffect 0.2s;
     }
+
     #secondary_navbar li button {
         font-size: 1.5em;
         font-weight: bolder;
         text-align: center;
         width: 250px;
-        margin: 25px 0 25px 0;
+        margin: 17.5px 0 17.5px 0;
         color: white;
         letter-spacing: 0.5px;
         padding: 5px 15px 5px 15px;
         text-decoration: none;
         outline: none;
     }
-    #secondary_navbar li button:after {
+
+        #secondary_navbar li button:after {
             display: block;
             content: '';
             border-bottom: solid 3px white;
@@ -230,11 +266,11 @@
         }
 
 
-    #secondary_navbar li button:hover:after {
+        #secondary_navbar li button:hover:after {
             transform: scaleX(1);
         }
 
-    #secondary_navbar li button.active:after {
+        #secondary_navbar li button.active:after {
             transform: scaleX(1);
             border-bottom: 2px solid white;
         }
@@ -255,92 +291,100 @@
         box-shadow: 2px 2px 2px #53565A;
     }
 
-    .price .header {
-        background-color: #111;
-        color: white;
-        font-size: 25px;
-    }
+        .price .header {
+            background-color: #111;
+            color: white;
+            font-size: 25px;
+        }
 
-    .price li {
-        border-bottom: 1px solid #eee;
-        padding: 20px;
-        text-align: center;
-    }
+        .price li {
+            border-bottom: 1px solid #eee;
+            padding: 20px;
+            text-align: center;
+        }
 
-    .price .grey {
-        background-color: #eee;
-        font-size: 20px;
-    }
+        .price .grey {
+            background-color: #eee;
+            font-size: 20px;
+        }
 
     #feature_list {
         font-size: 1.25em;
         text-align: center;
         width: 100%;
-        border-collapse:collapse;
+        border-collapse: collapse;
     }
 
-    #feature_list td {
-        padding: 12.5px 25px;
-    }
+        #feature_list td {
+            padding: 12.5px 25px;
+        }
 
-    #feature_list tr:first-child th:first-child {
-        background: white;
-        border: none;
-        text-align: left;
-    }
+        #feature_list tr:first-child th:first-child {
+            background: white;
+            border: none;
+            text-align: left;
+        }
 
-    #feature_list tr td:first-child {
-        font-size: 1.25em;
-        border: none;
-        text-align: left;
-    }
-    #feature_list tr td#title {
-        font-size: 1.35em;
-        font-weight: bolder;
-        border: none;
-        text-align: left;
-        color: black;
-    }
+        #feature_list tr td:first-child {
+            font-size: 1.25em;
+            border: none;
+            text-align: left;
+        }
 
-    #feature_list tr#feat_row:hover {
-        outline: 2px solid black;
-    }
-    #feature_list th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        font-size: 1.5em;
-        border-bottom: 1px solid #D0D0CE;
-    }
-    #feature_list td + td {
-        border-left: 1px solid #D0D0CE;
-        border-right: 1px solid #D0D0CE;
-    }
-    #feature_list tr:last-child td:nth-child(n+2) {
-        border-bottom: 1px solid #D0D0CE;
-    }
+        #feature_list tr td#title {
+            font-size: 1.35em;
+            font-weight: bolder;
+            border: none;
+            text-align: left;
+            color: black;
+        }
+
+        #feature_list tr#feat_row:hover {
+            outline: 2px solid black;
+        }
+
+        #feature_list th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            font-size: 1.5em;
+            border-bottom: 1px solid #D0D0CE;
+        }
+
+        #feature_list td + td {
+            border-left: 1px solid #D0D0CE;
+            border-right: 1px solid #D0D0CE;
+        }
+
+        #feature_list tr:last-child td:nth-child(n+2) {
+            border-bottom: 1px solid #D0D0CE;
+        }
+
     .tooltip {
         position: relative;
         display: inline-block;
         border-bottom: 1px dotted black;
     }
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 350px;
-        background-color: black;
-        color: #fff;
-        text-align: left;
-        border-radius: 6px;
-        padding: 10px;
-        /* Position the tooltip */
-        position: absolute;
-        z-index: 1;
-        font-size: 0.85em;
-        top: 35px;
-        left: -50px;
-    }
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
-    }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 350px;
+            background-color: black;
+            color: #fff;
+            text-align: left;
+            border-radius: 6px;
+            padding: 10px;
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            font-size: 0.85em;
+            top: 35px;
+            left: -50px;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
     ul#pricing_points li {
         color: #53565A;
         font-size: 1.15em;
@@ -359,6 +403,7 @@
         65% {
             transform: scale(1);
         }
+
         95% {
             transform: scale(1);
         }
@@ -367,6 +412,7 @@
             transform: scale(0);
         }
     }
+
     @-webkit-keyframes circle_card_1 {
         0% {
             opacity: 0%;
@@ -403,9 +449,9 @@
         100% {
             opacity: 0%;
             transform: scale(0.1);
-            
         }
     }
+
     @-webkit-keyframes circle_card_2 {
         0% {
             opacity: 0%;
@@ -437,6 +483,7 @@
             transform: scale(0.1);
         }
     }
+
     @-webkit-keyframes circle_card_3 {
         0% {
             opacity: 0%;
@@ -468,6 +515,7 @@
             transform: scale(0.1);
         }
     }
+
     @-webkit-keyframes circle_card_4 {
         0% {
             opacity: 0%;
@@ -498,6 +546,7 @@
             transform: scale(0.1);
         }
     }
+
     @-webkit-keyframes circle_card_5 {
         0% {
             opacity: 0%;
@@ -528,6 +577,7 @@
             transform: scale(0.1);
         }
     }
+
     @-webkit-keyframes circle_card_6 {
         0% {
             opacity: 0%;
@@ -655,6 +705,7 @@
             left: 275px;
         }
     }
+
     @keyframes click_anim_1 {
         0% {
             opacity: 100%;
@@ -684,6 +735,7 @@
             opacity: 100%;
         }
     }
+
     @keyframes click_anim_2 {
         0% {
             opacity: 100%;
@@ -713,6 +765,7 @@
             opacity: 100%;
         }
     }
+
     @keyframes click_anim_3 {
         0% {
             opacity: 100%;
@@ -734,6 +787,7 @@
             opacity: 100%;
         }
     }
+
     @keyframes hide_buttons {
         0% {
             transform: scale(1);
@@ -751,6 +805,7 @@
             transform: scale(1);
         }
     }
+
     @keyframes sulurit {
 
         0% {
@@ -817,6 +872,7 @@
             transform: scaleY( 1 );
         }
     }
+
     @keyframes sulurit_number_2 {
 
         0% {
@@ -854,6 +910,7 @@
             transform: scaleY( 1 );
         }
     }
+
     @keyframes sulurit_number_3 {
 
         0% {
@@ -924,6 +981,7 @@
             transform: scaleY( 1 );
         }
     }
+
     @keyframes linurit_gratt {
 
         0% {
@@ -954,6 +1012,7 @@
             transform: scaleY( 1 );
         }
     }
+
     @keyframes decrease_opac {
         0% {
             opacity: 100%;
@@ -975,6 +1034,7 @@
             opacity: 100%;
         }
     }
+
     @keyframes reveal_all_keys {
         0% {
             opacity: 0%;
@@ -993,6 +1053,7 @@
             opacity: 100%;
             left: 200px;
         }
+
         61% {
             opacity: 0%;
         }
@@ -1002,6 +1063,7 @@
             left: 245px;
         }
     }
+
     @keyframes samtals_1 {
         0% {
             opacity: 0%;
@@ -1027,6 +1089,7 @@
             opacity: 0%;
         }
     }
+
     @keyframes samtals_2 {
         0% {
             opacity: 0%;
@@ -1047,6 +1110,7 @@
             opacity: 100%;
             left: 245px;
         }
+
         61% {
             opacity: 0%;
         }
@@ -1056,6 +1120,7 @@
             left: 245px;
         }
     }
+
     @keyframes hide_default_keys {
         0% {
             opacity: 0%;
@@ -1072,6 +1137,7 @@
         60% {
             opacity: 100%;
         }
+
         61% {
             opacity: 0%;
         }
@@ -1080,10 +1146,12 @@
             opacity: 0%;
         }
     }
+
     @keyframes header_click_1 {
         0% {
             opacity: 100%;
         }
+
         12.5% {
             opacity: 100%;
         }
@@ -1091,6 +1159,7 @@
         13% {
             opacity: 0%;
         }
+
         98% {
             opacity: 0%;
         }
@@ -1099,6 +1168,7 @@
             opacity: 100%;
         }
     }
+
     @keyframes header_click_2 {
         0% {
             opacity: 0%;
@@ -1115,13 +1185,16 @@
         20% {
             opacity: 100%;
         }
+
         21% {
             opacity: 0%;
         }
+
         100% {
             opacity: 0%;
         }
     }
+
     @keyframes header_click_3 {
         0% {
             opacity: 0%;
@@ -1143,26 +1216,33 @@
             opacity: 0%;
         }
     }
+
     @keyframes card_title_1 {
         0% {
             opacity: 0%;
         }
+
         12.5% {
             opacity: 0%;
         }
+
         13% {
             opacity: 100%;
         }
+
         19.5% {
             opacity: 100%;
         }
+
         20.5% {
             opacity: 0%;
         }
+
         100% {
             opacity: 0%;
         }
     }
+
     @keyframes card_title_2 {
         0% {
             opacity: 0%;
@@ -1188,6 +1268,7 @@
             opacity: 0%;
         }
     }
+
     @keyframes card_title_3 {
         0% {
             opacity: 0%;
@@ -1213,6 +1294,7 @@
             opacity: 0%;
         }
     }
+
     @keyframes numbers_1 {
         0% {
             opacity: 100%;
@@ -1234,13 +1316,13 @@
             opacity: 100%;
         }
     }
+
     @keyframes flip_panel {
 
         0% {
             opacity: 0%;
             transform: rotateX(65deg);
             box-shadow: 3px -3px 5px #53565A;
-            
         }
 
         12.5% {
@@ -1308,6 +1390,7 @@
             left: 0;
         }
     }
+
     @keyframes hide_tables {
         0% {
             margin-right: 290x;
@@ -1329,10 +1412,6 @@
             margin-right: 290px;
         }
     }
-
-    
-    
-
 </style>
 
 <section id="export-container" class="export__container">
@@ -1345,13 +1424,13 @@
                 <div class="z-20 height">
                     <div class="header__content">
                         <h1 class="heading">
-                            <div style=" letter-spacing: 2px; color: black; font-size: 1.25em; font-weight: 900; /*font-family: Times New Roman;*/ background: white; padding: 0 15px 0 15px; width: 490px;">Umbreyttu þinni</div>
-                            <div style=" letter-spacing: 2px; color: black; font-size: 1.25em; font-weight: 900; /*font-family: Times New Roman;*/ background: white; padding: 0 15px 0 15px; width: 440px;">ákvarðanatöku</div>
-                            <div style=" word-spacing: 5px; color: white; /* font-weight: 900; */ font-size: 28px; width: 553px; background: black; padding: 10px; ">Réttar ákvarðanir byrja á réttum tölum á réttum tíma, rétt framsettar í þínum höndum</div>
+                            <div style=" line-height: 65px; letter-spacing: 2px; color: white; font-size: 1.5em; font-weight: 900; /*font-family: Times New Roman;*//* padding: 0 15px 0 15px; */ width: 545px;">Umbreyttu þinni</div>
+                            <div style=" letter-spacing: 2px; color: white; font-size: 1.55em; font-weight: 900; /*font-family: Times New Roman;*//* padding: 0 15px 0 15px; */ width: 440px;">ákvarðanatöku</div>
+                            <div style=" word-spacing: 5px; color: white; /* font-weight: 900; */ font-size: 22px; width: 560px; padding: 10px; font-weight: bolder;">Réttar ákvarðanir byrja á réttum tölum á réttum tíma, rétt framsettar í þínum höndum</div>
                         </h1>
                         <div>
                             <button onclick="window.open('https://deloittereports.is/Home/Booking','_blank');" style="" id="book_demo"><a href="javascript:void(0);">Bóka Demo</a></button>
-                            <button onclick="window.open('https://deloittereports.is/','_blank');" style="padding: 10px; font-size: 1.25em; color: white; margin-top: 32px; font-weight: bolder; letter-spacing: 1.5px; border: 2px solid white; width: 150px; box-shadow: 3px 3px 1px white;"><a href="javascript:void(0);">Skrá inn</a></button>
+                            <button onclick="window.open('https://deloittereports.is/','_blank');" style="padding: 10px; font-size: 1.25em; color: white; font-weight: bolder; letter-spacing: 1.5px; border: 2px solid white; width: 150px; box-shadow: 3px 3px 1px white;"><a href="javascript:void(0);">Skrá inn</a></button>
                         </div>
                         <div style=" word-spacing: 5px; color: white; /* font-weight: 900; */ font-size: 25px; width: 650px; padding: 10px; top: 510px; position: absolute; line-height: 50px; font-size: 23px;">Rekstrargreingingar Deloitte í mánaðarlegri áskrift. <br /> <button onclick="window.open('https://deloittereports.is/Home/Booking','_blank');" style="margin:0; width: 500px; padding: 5px;" id="book_demo"><a href="javascript:void(0);">Prufaðu frítt í 30 daga!</a></button></div>
                     </div>
@@ -1566,9 +1645,10 @@
                     </div>
                 </div>
                 <div class="col__1/2">
-                    <div class="col__full media__full" style="background-image: url(AdobeStock_209254754.jpeg); background-size: cover; background-color: black; opacity: 50%"></div>
+                    <div class="col__full media__full" style="background-image: url(Digital_1_blur.png); background-size: cover; background-color: black; opacity: 85% "></div>
+                    <!--<div class="col__full media__full" style="background-image: url(AdobeStock_209254754.jpeg); background-size: cover; background-color: black; opacity: 50%"></div>-->
                     <!--<div class="col__full media__full" style=" background: url(iceland_background.png) bottom; bottom: 0; background-size: 100%; background-color: #86BC25; background-repeat: no-repeat;"></div>-->
-                    <!--<div class="col__full media__full" style="background-size: cover; background-color: #86BC25; "></div>-->
+                    <!--<div class="col__full media__full" style="background-size: cover; background-color: #a0dcff; "></div>-->
                 </div>
             </div>
         </div>
@@ -1589,20 +1669,20 @@
                 <div class="w-full pd-content">
 
                     <!--
-    <div style="padding-top: 20px; width: 45%; height: 300px; text-align: left; float: left; margin-top: 60px; margin-right: 150px;">
-        <div style="width: 100%; line-height: 52.5px;">
-            <h1 class="font-bold" style="font-size: 3.1em; ">
-                <span style="background: black; padding: 15px; line-height: 90px;">Góð innsýn í reksturinn</span>
-            </h1>
-        </div>
-        <p style=" width: 100%; font-size: 1.5em; color: white; margin-top: 25px; word-spacing: 5px; /* font-weight: bolder; */">
-            Greiningarlausnin okkar gerir þér kleift að kanna og skilja gögnin þín með nýjum og einstökum aðferðum og veita þér aðgerðarhæfa innsýn og ráðleggingar.
-        </p>
-    </div>
-                    <div style="width: 450px; height: 330px; float: left; margin-top: 48px;">
-                        <img src="Logic_myndir/magnify.PNG" style="height: 100%;">
+                    <div style="padding-top: 20px; width: 45%; height: 300px; text-align: left; float: left; margin-top: 60px; margin-right: 150px;">
+                        <div style="width: 100%; line-height: 52.5px;">
+                            <h1 class="font-bold" style="font-size: 3.1em; ">
+                                <span style="background: black; padding: 15px; line-height: 90px;">Góð innsýn í reksturinn</span>
+                            </h1>
+                        </div>
+                        <p style=" width: 100%; font-size: 1.5em; color: white; margin-top: 25px; word-spacing: 5px; /* font-weight: bolder; */">
+                            Greiningarlausnin okkar gerir þér kleift að kanna og skilja gögnin þín með nýjum og einstökum aðferðum og veita þér aðgerðarhæfa innsýn og ráðleggingar.
+                        </p>
                     </div>
-                    -->
+                                    <div style="width: 450px; height: 330px; float: left; margin-top: 48px;">
+                                        <img src="Logic_myndir/magnify.PNG" style="height: 100%;">
+                                    </div>
+                                    -->
 
                     <div style="padding-top: 1px;">
                         <img src="Logic_myndir/try_it_arrow.png" width="50" style="float: left; margin-top: 100px; position: relative; top:35px; left: 815px;">
@@ -1694,19 +1774,19 @@
                     </div>
 
                     <!--
-            <div style="width: 50%; height: 400px; line-height: 80px; font-family: 'Open Sans', Cambria, Cochin, Georgia, Times, Times New Roman, serif, sans-serif; float: left; margin-left: 50px; padding-top: 25px;">
-                <h1 style="font-size: 1.5em; line-height: 35px;">
-                    <i>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"</i>
-                    <div style="font-family: 'Open Sans', Calibri, sans-serif; font-weight: bolder;  padding-top: 25px;">- Ýmir Örn Finnbogason, <br /> forstöðumaður viðskiptagreindar</div>
-                </h1>
-                <div style="font-size: 2.5em;">
-                    Spjöllum saman í síma
-                </div>
-                <h1 class="font-bold" style="font-size: 4em;">
-                    <span style="background: black; padding: 15px; color: white;">8951744</span>
-                </h1>
-            </div>
-                -->
+                    <div style="width: 50%; height: 400px; line-height: 80px; font-family: 'Open Sans', Cambria, Cochin, Georgia, Times, Times New Roman, serif, sans-serif; float: left; margin-left: 50px; padding-top: 25px;">
+                        <h1 style="font-size: 1.5em; line-height: 35px;">
+                            <i>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"</i>
+                            <div style="font-family: 'Open Sans', Calibri, sans-serif; font-weight: bolder;  padding-top: 25px;">- Ýmir Örn Finnbogason, <br /> forstöðumaður viðskiptagreindar</div>
+                        </h1>
+                        <div style="font-size: 2.5em;">
+                            Spjöllum saman í síma
+                        </div>
+                        <h1 class="font-bold" style="font-size: 4em;">
+                            <span style="background: black; padding: 15px; color: white;">8951744</span>
+                        </h1>
+                    </div>
+                        -->
 
                     <div style="width: 55%; height: 400px; font-family: 'Open Sans', Calibri, sans-serif; float: left; margin-left: 55px; padding-top: 90px;">
                         <h1 style="line-height: 21px; letter-spacing: 2.5px;">
@@ -1902,10 +1982,10 @@
                         <div style="height: 685px;  background: white; box-shadow: 2px 2px 5px rgb(0 0 0 / 0.6); ">
                             <h1 style="text-align: left; font-weight: bolder; font-size: 2em; padding: 35px; color: black; line-height: 30px;">
                                 Basic<br />
-                                     <span style="font-weight: 400; font-size: 0.55em; color: #75787B; ">Byrjaðu á mikilvægustu upplýsingunum fyrir þitt fyrirtæki.</span>
+                                <span style="font-weight: 400; font-size: 0.55em; color: #75787B; ">Byrjaðu á mikilvægustu upplýsingunum fyrir þitt fyrirtæki.</span>
                             </h1>
                             <h1 style="text-align: left; font-weight: bolder; font-size: 2.5em; padding: 0px 35px; line-height: 37.5px;">19.995 kr.<span style="font-size: 0.5em; color: #75787B; "> / mán.</span></h1>
-                            
+
                             <div style="padding: 35px 35px;">
                                 <ul id="pricing_points" style="list-style-type: none; margin: 0; padding: 0;">
                                     <li>Áskrift að rekstrargreiningu</li>
@@ -1924,12 +2004,12 @@
                         <div style="height: 685px; box-shadow: 2px 2px 5px rgb(0 0 0 / 0.6); background: white; ">
                             <h1 style="text-align: left; font-weight: bolder; font-size: 2em; padding: 35px; color: black; line-height: 30px;">
                                 Premium<br />
-                                       <span style="font-weight: 400; font-size: 0.55em; color: #75787B; ">Upplifðu mikilvægi gagna fyrir ört stækkandi fyrirtæki.</span>
+                                <span style="font-weight: 400; font-size: 0.55em; color: #75787B; ">Upplifðu mikilvægi gagna fyrir ört stækkandi fyrirtæki.</span>
                             </h1>
                             <h1 style="text-align: left; font-weight: bolder; font-size: 2.5em; padding: 0px 35px; line-height: 37.5px;">49.995 kr.<span style="font-size: 0.5em; color: #75787B; "> / mán.</span></h1>
                             <div style="padding: 18px 35px; font-size: 1.5em; font-weight: bolder; text-decoration: underline;">Sama og í Basic, að auki:</div>
                             <div style="padding: 0px 35px;">
-                                
+
                                 <ul id="pricing_points" style="list-style-type: none; margin: 0; padding: 0;">
                                     <li>Áskrift að sölugreiningu og efnahagsgreiningu</li>
                                     <li>Allt að 10 notendur</li>
@@ -1947,7 +2027,7 @@
                         <div style="height: 685px;  background: white; box-shadow: 2px 2px 5px rgb(0 0 0 / 0.6); ">
                             <h1 style="text-align: left; font-weight: bolder; font-size: 2em; padding: 35px; color: black; line-height: 30px;">
                                 Portfolio<br />
-                                         <span style="font-weight: 400; font-size: 0.55em; color: #75787B; ">Hámarkaðu möguleika samstæðunnar með fullkomnri yfirsýn.</span>
+                                <span style="font-weight: 400; font-size: 0.55em; color: #75787B; ">Hámarkaðu möguleika samstæðunnar með fullkomnri yfirsýn.</span>
                             </h1>
                             <h1 style="text-align: left; font-weight: bolder; font-size: 2.5em; padding: 0px 35px; line-height: 37.5px;">Fá tilboð</h1>
                             <div style="padding: 18px 35px; font-size: 1.5em; font-weight: bolder; text-decoration: underline;">Sama og í Premium, að auki:</div>
@@ -2091,20 +2171,20 @@
                             <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
                         </tr>
                         <!--
-    <tr id="feat_row">
-        <td>
-            <div class="tooltip">
-                Sérsmíði
-                <span class="tooltiptext">
-                    Komdu með tillögu um breytingar sem henta þér og þínum starfsmönnum og við mótum þína greiningu eftir því.
-                </span>
-            </div>
-        </td>
-        <td></td>
-        <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
-        <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
-    </tr>
-        -->
+                        <tr id="feat_row">
+                            <td>
+                                <div class="tooltip">
+                                    Sérsmíði
+                                    <span class="tooltiptext">
+                                        Komdu með tillögu um breytingar sem henta þér og þínum starfsmönnum og við mótum þína greiningu eftir því.
+                                    </span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                        </tr>
+                            -->
                         <tr id="feat_row">
                             <td>
                                 <div class="tooltip">
@@ -2163,26 +2243,26 @@
                             <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
                         </tr>
                         <!--
-    <tr id="feat_row">
-        <td>
-            <div class="tooltip">
-                Tilkynningar
-                <span class="tooltiptext">
-                    Innbyggðar tilkynningar ef tölur stemma ekki við hrá gögn tekin beint úr bókhaldskerfinu.
-                </span>
-            </div>
-        </td>
-        <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
-        <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
-        <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
-    </tr>
-        -->
+                        <tr id="feat_row">
+                            <td>
+                                <div class="tooltip">
+                                    Tilkynningar
+                                    <span class="tooltiptext">
+                                        Innbyggðar tilkynningar ef tölur stemma ekki við hrá gögn tekin beint úr bókhaldskerfinu.
+                                    </span>
+                                </div>
+                            </td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                            <td><img style="display: inline;" src="checkmark.png" alt="" width=30></img></td>
+                        </tr>
+                            -->
                         <tr id="feat_row">
                             <td>
                                 <div class="tooltip">
                                     Spjallsvæði
                                     <span class="tooltiptext">
-                                        Hver greining er tengd við sitt eigið spjallsvæði til að auðvelda upplýsingaflæði milli notenda, bókara og Deloitte. 
+                                        Hver greining er tengd við sitt eigið spjallsvæði til að auðvelda upplýsingaflæði milli notenda, bókara og Deloitte.
                                     </span>
                                 </div>
                             </td>
@@ -2241,19 +2321,19 @@
                     </div>
 
                     <!--
-            <div style="width: 50%; height: 400px; line-height: 80px; font-family: 'Open Sans', Cambria, Cochin, Georgia, Times, Times New Roman, serif, sans-serif; float: left; margin-left: 50px; padding-top: 25px;">
-                <h1 style="font-size: 1.5em; line-height: 35px;">
-                    <i>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"</i>
-                    <div style="font-family: 'Open Sans', Calibri, sans-serif; font-weight: bolder;  padding-top: 25px;">- Ýmir Örn Finnbogason, <br /> forstöðumaður viðskiptagreindar</div>
-                </h1>
-                <div style="font-size: 2.5em;">
-                    Spjöllum saman í síma
-                </div>
-                <h1 class="font-bold" style="font-size: 4em;">
-                    <span style="background: black; padding: 15px; color: white;">8951744</span>
-                </h1>
-            </div>
-                -->
+                    <div style="width: 50%; height: 400px; line-height: 80px; font-family: 'Open Sans', Cambria, Cochin, Georgia, Times, Times New Roman, serif, sans-serif; float: left; margin-left: 50px; padding-top: 25px;">
+                        <h1 style="font-size: 1.5em; line-height: 35px;">
+                            <i>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"</i>
+                            <div style="font-family: 'Open Sans', Calibri, sans-serif; font-weight: bolder;  padding-top: 25px;">- Ýmir Örn Finnbogason, <br /> forstöðumaður viðskiptagreindar</div>
+                        </h1>
+                        <div style="font-size: 2.5em;">
+                            Spjöllum saman í síma
+                        </div>
+                        <h1 class="font-bold" style="font-size: 4em;">
+                            <span style="background: black; padding: 15px; color: white;">8951744</span>
+                        </h1>
+                    </div>
+                        -->
 
                     <div style="width: 55%; height: 400px; font-family: 'Open Sans', Calibri, sans-serif; float: left; margin-left: 55px; padding-top: 90px;">
                         <h1 style="line-height: 21px; letter-spacing: 2.5px;">
@@ -2285,11 +2365,11 @@
                             <span style=" font-size: 2em; color: #53565A;">Business Intelligence</span>
                         </div>
                         <p style="width: 100%; font-size: 1.5em; margin-top: 25px; color: #53565A; word-spacing: 5px; ">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
                     </div>
