@@ -5,6 +5,158 @@
 
 
 <style>
+    @media screen and (min-width: 1600px) {
+        #title_1 {
+            line-height: 65px;
+            letter-spacing: -3px;
+            word-spacing: 7.5px;
+            color: black;
+            font-size: 1.75em;
+            box-shadow: 2px 2px 2px rgb(0 0 0 / 45%);
+            background: white;
+            padding: 15px 15px 015px;
+            font-weight: 900;
+            width: 594px;
+        }
+        #title_2 {
+            letter-spacing: -3px;
+            color: black;
+            box-shadow: 2px 2px 2px rgb(0 0 0 / 45%);
+            background: white;
+            font-size: 1.8em;
+            font-weight: 900;
+            padding: 0 15px 0 15px;
+            width: 554px;
+        }
+        #sub_title {
+            word-spacing: 5px;
+            color: white;
+            background: black;
+            box-shadow: 2px 2px 2px rgb(0 0 0 / 45%);
+            font-size: 20px;
+            width: 560px;
+            padding: 10px;
+            font-weight: bold;
+        }
+        #header_box {
+            margin-top: 155px;
+        }
+
+        #deloitte_circle {
+            top: 80px;
+            right: 150px;
+            animation: scale_circle 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
+        #try_for_free_text {
+            font-size: 26px;
+            word-spacing: 3px;
+        }
+        #try_for_free_button {
+            border: 2px solid white;
+            background: white;
+            font-size: 1.25em;
+            padding: 10px;
+            color: black;
+            font-weight: bolder;
+            margin: 5px 25px 0 0;
+            letter-spacing: 1.5px;
+            box-shadow: 3px 3px 2px rgb(0 0 0 / 40%);
+            width: 350px;
+        }
+        #value_prop_scaling {
+            margin-top: 90px;
+        }
+        #start_now {
+            font-size: 1em;
+        }
+        #about_us_3 {
+            margin-top: 90px;
+        }
+    }
+    @media screen and (max-width: 1600px) {
+        #title_1 {
+            line-height: 65px;
+            letter-spacing: -3px;
+            word-spacing: 7.5px;
+            color: black;
+            font-size: 1.25em;
+            box-shadow: 2px 2px 2px rgb(0 0 0 / 45%);
+            background: white;
+            padding: 15px 15px 015px;
+            font-weight: 900;
+            width: 422px;
+        }
+        #title_2 {
+            letter-spacing: -3px;
+            color: black;
+            box-shadow: 2px 2px 2px rgb(0 0 0 / 45%);
+            background: white;
+            font-size: 1.3em;
+            font-weight: 900;
+            padding: 0 15px 0 15px;
+            width: 395px;
+        }
+        #sub_title {
+            word-spacing: 5px;
+            color: white;
+            background: black;
+            box-shadow: 2px 2px 2px rgb(0 0 0 / 45%);
+            font-size: 15px;
+            width: 423px;
+            padding: 10px;
+            font-weight: bold;
+        }
+        #try_for_free_text {
+            font-size: 20px;
+            word-spacing: 3px;
+        }
+        #header_box {
+            margin-top: 155px;
+            margin-left: 50px;
+        }
+        #try_for_free_button {
+            border: 2px solid white;
+            background: white;
+            font-size: 1em;
+            padding: 5px;
+            color: black;
+            font-weight: bolder;
+            margin: 5px 25px 0 0;
+            letter-spacing: 1.5px;
+            box-shadow: 3px 3px 2px rgb(0 0 0 / 40%);
+            width: 350px;
+        }
+        #main_animation_container {
+            transform: scale(0.7);
+        }
+
+        #deloitte_circle {
+            top: 80px;
+            right: 0;
+            animation: scale_circle_small 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
+        #numbers_panel_scale {
+            z-index: 15;
+            position: absolute;
+            top: 95px;
+            right: 0;
+            transform: scale(0.8);
+        }
+        #value_prop_scaling {
+            font-size: 0.75em;
+            margin-top: 90px;
+        }
+        #start_now {
+            font-size: 0.75em;
+        }
+        #about_us_3 {
+            margin-top: 130px;
+        }
+    }
+
+
     #book_demo {
         border: 2px solid white;
         background: white;
@@ -18,64 +170,65 @@
         width: 175px;
     }
 
-        #book_demo:hover {
-            background-color: #ededed;
-            border: 2px solid #ededed;
+
+            #book_demo:hover {
+                background-color: #ededed;
+                border: 2px solid #ededed;
+            }
+
+        #pricing_points li:before {
+            content: '✓';
+            padding-right: 5px;
         }
 
-    #pricing_points li:before {
-        content: '✓';
-        padding-right: 5px;
-    }
+        html {
+            font-family: 'Open Sans', Calibri, sans-serif;
+        }
 
-    html {
-        font-family: 'Open Sans', Calibri, sans-serif;
-    }
+        .top_bottom_shadow {
+            box-shadow: 0px -2px 5px #53565A, 0px 2px 5px #53565A;
+        }
 
-    .top_bottom_shadow {
-        box-shadow: 0px -2px 5px #53565A, 0px 2px 5px #53565A;
-    }
-
-    .grid_three_by_three {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+        .grid_three_by_three {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
 
         .grid_three_by_three div {
             padding: 10px;
             background-color: #f6f6f6;
         }
-    /*LOOPED*/
-    #mouse {
-        animation: main_mouse 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        /*LOOPED*/
+        #mouse {
+            animation: main_mouse 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #button_blue {
-        animation: hide_buttons 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #button_blue {
+            animation: hide_buttons 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #button_1 {
-        animation: click_anim_1 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #button_1 {
+            animation: click_anim_1 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #button_2 {
-        animation: click_anim_2 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #button_2 {
+            animation: click_anim_2 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #button_3 {
-        animation: click_anim_3 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #button_3 {
+            animation: click_anim_3 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #sulurit td {
-        animation: sulurit 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-        transform-origin: bottom;
-    }
+        #sulurit td {
+            animation: sulurit 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+            transform-origin: bottom;
+        }
 
         #sulurit td #data_sulurit_1 {
             animation: sulurit_number_1 15s ease-in-out infinite;
@@ -94,226 +247,222 @@
 
 
 
-    #blue {
-        animation: linurit_blatt 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #blue {
+            animation: linurit_blatt 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #gray {
-        animation: linurit_gratt 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #gray {
+            animation: linurit_gratt 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #opacity_anim {
-        animation: decrease_opac 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #opacity_anim {
+            animation: decrease_opac 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #default_key_1, #default_key_2 {
-        animation: hide_default_keys 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #default_key_1, #default_key_2 {
+            animation: hide_default_keys 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #reveal_key_1, #reveal_key_2 {
-        animation: reveal_all_keys 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #reveal_key_1, #reveal_key_2 {
+            animation: reveal_all_keys 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #samtals_1 {
-        animation: samtals_1 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #samtals_1 {
+            animation: samtals_1 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #samtals_2 {
-        animation: samtals_2 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #samtals_2 {
+            animation: samtals_2 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #table_header_tekjur {
-        animation: header_click_1 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #table_header_tekjur {
+            animation: header_click_1 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #table_header_framlegd {
-        animation: header_click_2 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #table_header_framlegd {
+            animation: header_click_2 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #table_header_ebitda {
-        animation: header_click_3 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #table_header_ebitda {
+            animation: header_click_3 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #framlegd_card {
-        animation: card_title_1 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #framlegd_card {
+            animation: card_title_1 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #ebitda_card { /* EBITDA í ár*/
-        animation: card_title_2 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #ebitda_card { /* EBITDA í ár*/
+            animation: card_title_2 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #ebitda_card_month { /* EBITDA í maí*/
-        animation: card_title_3 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #ebitda_card_month { /* EBITDA í maí*/
+            animation: card_title_3 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #year_hide {
-        animation: numbers_1 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #year_hide {
+            animation: numbers_1 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #numbers_panel {
-        animation: flip_panel 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #numbers_panel {
+            animation: flip_panel 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #main_animation_container {
-        animation: flip_container 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #main_animation_container {
+            animation: flip_container 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #sidebar_anim {
-        animation: hide_sidebar 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #sidebar_anim {
+            animation: hide_sidebar 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #flip_card {
-        border: 1px solid #e8e8e8;
-        animation: hide_tables 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #flip_card {
+            border: 1px solid #e8e8e8;
+            animation: hide_tables 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #my-chart {
-        border: 1px solid #e8e8e8;
-        animation: hide_tables 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #my-chart {
+            border: 1px solid #e8e8e8;
+            animation: hide_tables 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #report_container_1 {
-        animation: circle_card_1 15s linear infinite;
-        animation-fill-mode: forwards;
-    }
+        #report_container_1 {
+            animation: circle_card_1 15s linear infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #report_container_2 {
-        animation: circle_card_2 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
+        #report_container_2 {
+            animation: circle_card_2 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+        }
 
-    #report_container_3 {
-        animation: circle_card_3 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-        animation-delay: 0.3s;
-    }
+        #report_container_3 {
+            animation: circle_card_3 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 0.3s;
+        }
 
-    #report_container_4 {
-        animation: circle_card_4 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-        animation-delay: 0.33s;
-    }
+        #report_container_4 {
+            animation: circle_card_4 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 0.33s;
+        }
 
-    #report_container_5 {
-        animation: circle_card_5 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-        animation-delay: 0.66s;
-    }
+        #report_container_5 {
+            animation: circle_card_5 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 0.66s;
+        }
 
-    #report_container_6 {
-        animation: circle_card_6 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-        animation-delay: 1s;
-    }
-
-
-    #deloitte_circle {
-        animation: scale_circle 15s ease-in-out infinite;
-        animation-fill-mode: forwards;
-    }
-
-
-
-    #secondary_navbar {
-        justify-content: center;
-        display: flex;
-    }
-
-    .tabcontent {
-        display: none;
-        //-webkit-animation: fadeEffect 0.2s;
-        //animation: fadeEffect 0.2s;
-    }
-
-    #secondary_navbar li button {
-        font-size: 1.5em;
-        font-weight: bolder;
-        text-align: center;
-        width: 250px;
-        margin: 17.5px 0 17.5px 0;
-        color: white;
-        letter-spacing: 0.5px;
-        padding: 5px 15px 5px 15px;
-        text-decoration: none;
-        outline: none;
-    }
-
-        #secondary_navbar li button:after {
-            display: block;
-            content: '';
-            border-bottom: solid 3px white;
-            transform: scaleX(0);
-            transition: transform 300ms ease-in-out;
+        #report_container_6 {
+            animation: circle_card_6 15s ease-in-out infinite;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
         }
 
 
-        #secondary_navbar li button:hover:after {
-            transform: scaleX(1);
+
+
+
+        #secondary_navbar {
+            justify-content: center;
+            display: flex;
         }
 
-        #secondary_navbar li button.active:after {
-            transform: scaleX(1);
-            border-bottom: 2px solid white;
+        .tabcontent {
+            display: none;
+            //-webkit-animation: fadeEffect 0.2s;
+            //animation: fadeEffect 0.2s;
         }
 
-
-    .columns {
-        float: left;
-        width: 33.3%;
-        padding: 8px;
-    }
-
-    .price {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-        box-shadow: 2px 2px 2px #53565A;
-    }
-
-        .price .header {
-            background-color: #111;
-            color: white;
-            font-size: 25px;
-        }
-
-        .price li {
-            border-bottom: 1px solid #eee;
-            padding: 20px;
+        #secondary_navbar li button {
+            font-size: 1.5em;
+            font-weight: bolder;
             text-align: center;
+            width: 250px;
+            margin: 17.5px 0 17.5px 0;
+            color: white;
+            letter-spacing: 0.5px;
+            padding: 5px 15px 5px 15px;
+            text-decoration: none;
+            outline: none;
         }
 
-        .price .grey {
-            background-color: #eee;
-            font-size: 20px;
+            #secondary_navbar li button:after {
+                display: block;
+                content: '';
+                border-bottom: solid 3px white;
+                transform: scaleX(0);
+                transition: transform 300ms ease-in-out;
+            }
+
+
+            #secondary_navbar li button:hover:after {
+                transform: scaleX(1);
+            }
+
+            #secondary_navbar li button.active:after {
+                transform: scaleX(1);
+                border-bottom: 2px solid white;
+            }
+
+
+        .columns {
+            float: left;
+            width: 33.3%;
+            padding: 8px;
         }
 
-    #feature_list {
-        font-size: 1.25em;
-        text-align: center;
-        width: 100%;
-        border-collapse: collapse;
-    }
+        .price {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            box-shadow: 2px 2px 2px #53565A;
+        }
+
+            .price .header {
+                background-color: #111;
+                color: white;
+                font-size: 25px;
+            }
+
+            .price li {
+                border-bottom: 1px solid #eee;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .price .grey {
+                background-color: #eee;
+                font-size: 20px;
+            }
+
+        #feature_list {
+            font-size: 1.25em;
+            text-align: center;
+            width: 100%;
+            border-collapse: collapse;
+        }
 
         #feature_list td {
             padding: 12.5px 25px;
@@ -359,1055 +508,1078 @@
             border-bottom: 1px solid #D0D0CE;
         }
 
-    .tooltip {
-        position: relative;
-        display: inline-block;
-        border-bottom: 1px dotted black;
-    }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 350px;
+                background-color: black;
+                color: #fff;
+                text-align: left;
+                border-radius: 6px;
+                padding: 10px;
+                /* Position the tooltip */
+                position: absolute;
+                z-index: 1;
+                font-size: 0.85em;
+                top: 35px;
+                left: -50px;
+            }
+
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+            }
+
+        ul#pricing_points li {
+            color: #53565A;
+            font-size: 1.15em;
+            padding: 5px 0;
+        }
+
+        @-webkit-keyframes scale_circle_small {
+            0% {
+                transform: scale(0);
+            }
+
+            61% {
+                transform: scale(0);
+            }
+
+            65% {
+                transform: scale(0.7);
+            }
+
+            95% {
+                transform: scale(0.7);
+            }
+
+            100% {
+                transform: scale(0);
+            }
+        }
+        @-webkit-keyframes scale_circle {
+            0% {
+                transform: scale(0);
+            }
+
+            61% {
+                transform: scale(0);
+            }
+
+            65% {
+                transform: scale(1);
+            }
+
+            95% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        @-webkit-keyframes circle_card_1 {
+            0% {
+                opacity: 0%;
+                transform: scale(0.1);
+                left: -55px;
+            }
+
+            60% {
+                transform: scale(0);
+                left: 25px;
+            }
+
+            61% {
+                opacity: 0%;
+            }
+
+            65% {
+                opacity: 100%;
+                transform: scale(1.2);
+            }
+
+            90% {
+                opacity: 100%;
+                transform: scale(1.2);
+                left: 150px;
+            }
+
+            96% {
+                opacity: 100%;
+                transform: scale(1);
+                left: 1225px;
+            }
+
+            100% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
+        }
+
+        @-webkit-keyframes circle_card_2 {
+            0% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
+
+            65% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
+
+            70% {
+                opacity: 100%;
+                transform: scale(1.0);
+            }
+
+            90% {
+                opacity: 100%;
+                transform: scale(1.05);
+            }
+
+            98% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
+
+            100% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
+        }
+
+        @-webkit-keyframes circle_card_3 {
+            0% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
+
+            65% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
+
+            70% {
+                opacity: 100%;
+                transform: scale(0.9);
+            }
+
+            90% {
+                opacity: 100%;
+                transform: scale(0.9);
+            }
+
+            98% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
+
+            100% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
+        }
+
+        @-webkit-keyframes circle_card_4 {
+            0% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
+
+            65% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
+
+            70% {
+                opacity: 25%;
+                transform: scale(0.5);
+            }
+
+            90% {
+                opacity: 25%;
+                transform: scale(0.6);
+            }
 
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 350px;
-            background-color: black;
-            color: #fff;
-            text-align: left;
-            border-radius: 6px;
-            padding: 10px;
-            /* Position the tooltip */
-            position: absolute;
-            z-index: 1;
-            font-size: 0.85em;
-            top: 35px;
-            left: -50px;
-        }
-
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-        }
-
-    ul#pricing_points li {
-        color: #53565A;
-        font-size: 1.15em;
-        padding: 5px 0;
-    }
-
-    @-webkit-keyframes scale_circle {
-        0% {
-            transform: scale(0);
-        }
-
-        61% {
-            transform: scale(0);
-        }
-
-        65% {
-            transform: scale(1);
-        }
-
-        95% {
-            transform: scale(1);
-        }
-
-        100% {
-            transform: scale(0);
-        }
-    }
-
-    @-webkit-keyframes circle_card_1 {
-        0% {
-            opacity: 0%;
-            transform: scale(0.1);
-            left: -55px;
-        }
-
-        60% {
-            transform: scale(0);
-            left: 25px;
-        }
-
-        61% {
-            opacity: 0%;
-        }
-
-        65% {
-            opacity: 100%;
-            transform: scale(1.2);
-        }
-
-        90% {
-            opacity: 100%;
-            transform: scale(1.2);
-            left: 150px;
-        }
-
-        96% {
-            opacity: 100%;
-            transform: scale(1);
-            left: 1225px;
-        }
+            95% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
 
-        100% {
-            opacity: 0%;
-            transform: scale(0.1);
+            100% {
+                transform: scale(0.1);
+            }
         }
-    }
 
-    @-webkit-keyframes circle_card_2 {
-        0% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
-
-        65% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
-
-        70% {
-            opacity: 100%;
-            transform: scale(1.0);
-        }
-
-        90% {
-            opacity: 100%;
-            transform: scale(1.05);
-        }
-
-        98% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
-
-        100% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
-    }
-
-    @-webkit-keyframes circle_card_3 {
-        0% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
+        @-webkit-keyframes circle_card_5 {
+            0% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
 
-        65% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
-
-        70% {
-            opacity: 100%;
-            transform: scale(0.9);
-        }
-
-        90% {
-            opacity: 100%;
-            transform: scale(0.9);
-        }
-
-        98% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
-
-        100% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
-    }
-
-    @-webkit-keyframes circle_card_4 {
-        0% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
-
-        65% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
+            65% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
 
-        70% {
-            opacity: 25%;
-            transform: scale(0.5);
-        }
+            70% {
+                opacity: 35%;
+                transform: scale(0.75);
+            }
 
-        90% {
-            opacity: 25%;
-            transform: scale(0.6);
-        }
+            90% {
+                opacity: 35%;
+                transform: scale(0.85);
+            }
 
-        95% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
+            95% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
 
-        100% {
-            transform: scale(0.1);
+            100% {
+                transform: scale(0.1);
+            }
         }
-    }
 
-    @-webkit-keyframes circle_card_5 {
-        0% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
+        @-webkit-keyframes circle_card_6 {
+            0% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
 
-        65% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
+            65% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
 
-        70% {
-            opacity: 35%;
-            transform: scale(0.75);
-        }
+            70% {
+                opacity: 30%;
+                transform: scale(1);
+            }
 
-        90% {
-            opacity: 35%;
-            transform: scale(0.85);
-        }
+            90% {
+                opacity: 30%;
+                transform: scale(1.1);
+            }
 
-        95% {
-            opacity: 0%;
-            transform: scale(0.1);
+            95% {
+                opacity: 0%;
+                transform: scale(0.1);
+            }
+
+            100% {
+                transform: scale(0.1);
+            }
         }
 
-        100% {
-            transform: scale(0.1);
-        }
-    }
 
-    @-webkit-keyframes circle_card_6 {
-        0% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
+        @keyframes flip_container {
 
-        65% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
+            0% {
+                right: -350px;
+            }
 
-        70% {
-            opacity: 30%;
-            transform: scale(1);
-        }
+            60% {
+                right: -350px;
+            }
 
-        90% {
-            opacity: 30%;
-            transform: scale(1.1);
-        }
+            65% {
+                right: -1700px;
+            }
 
-        95% {
-            opacity: 0%;
-            transform: scale(0.1);
-        }
+            93% {
+                right: -1700px;
+            }
 
-        100% {
-            transform: scale(0.1);
+            100% {
+                right: -350px;
+            }
         }
-    }
 
 
-    @keyframes flip_container {
 
-        0% {
-            right: -350px;
-        }
-
-        60% {
-            right: -350px;
-        }
 
-        65% {
-            right: -1700px;
-        }
-
-        93% {
-            right: -1700px;
-        }
+        @-webkit-keyframes fadeEffect {
+            from {
+                opacity: 0.9;
+            }
 
-        100% {
-            right: -350px;
+            to {
+                opacity: 1;
+            }
         }
-    }
 
+        @keyframes fadeEffect {
+            from {
+                opacity: 0.9;
+            }
 
-
-
-    @-webkit-keyframes fadeEffect {
-        from {
-            opacity: 0.9;
-        }
-
-        to {
-            opacity: 1;
+            to {
+                opacity: 1;
+            }
         }
-    }
 
-    @keyframes fadeEffect {
-        from {
-            opacity: 0.9;
-        }
 
-        to {
-            opacity: 1;
-        }
-    }
 
+        /*LOOPED*/
+        @keyframes main_mouse {
+            0% {
+                top: 50px;
+                left: 275px;
+            }
 
+            6% {
+                top: 50px;
+                left: 275px;
+            }
 
-    /*LOOPED*/
-    @keyframes main_mouse {
-        0% {
-            top: 50px;
-            left: 275px;
-        }
+            13% {
+                top: -190px;
+                left: -120px;
+            }
 
-        6% {
-            top: 50px;
-            left: 275px;
-        }
+            16% {
+                top: -190px;
+                left: -120px;
+            }
 
-        13% {
-            top: -190px;
-            left: -120px;
-        }
+            20% {
+                top: -85px;
+                left: -120px;
+            }
 
-        16% {
-            top: -190px;
-            left: -120px;
-        }
+            22% {
+                top: -85px;
+                left: -120px;
+            }
 
-        20% {
-            top: -85px;
-            left: -120px;
-        }
+            26% {
+                top: -10px;
+                left: 320px;
+            }
 
-        22% {
-            top: -85px;
-            left: -120px;
-        }
+            90% {
+                top: -10px;
+                left: 320px;
+            }
 
-        26% {
-            top: -10px;
-            left: 320px;
+            100% {
+                top: 50px;
+                left: 275px;
+            }
         }
 
-        90% {
-            top: -10px;
-            left: 320px;
-        }
+        @keyframes click_anim_1 {
+            0% {
+                opacity: 100%;
+            }
 
-        100% {
-            top: 50px;
-            left: 275px;
-        }
-    }
+            12.5% {
+                opacity: 100%;
+            }
 
-    @keyframes click_anim_1 {
-        0% {
-            opacity: 100%;
-        }
+            13% {
+                opacity: 65%;
+            }
 
-        12.5% {
-            opacity: 100%;
-        }
+            13.75% {
+                opacity: 100%;
+            }
 
-        13% {
-            opacity: 65%;
-        }
+            65% {
+                transform: scale(1);
+            }
 
-        13.75% {
-            opacity: 100%;
-        }
+            70% {
+                transform: scale(0);
+            }
 
-        65% {
-            transform: scale(1);
+            100% {
+                opacity: 100%;
+            }
         }
 
-        70% {
-            transform: scale(0);
-        }
+        @keyframes click_anim_2 {
+            0% {
+                opacity: 100%;
+            }
 
-        100% {
-            opacity: 100%;
-        }
-    }
+            19.5% {
+                opacity: 100%;
+            }
 
-    @keyframes click_anim_2 {
-        0% {
-            opacity: 100%;
-        }
+            20.25% {
+                opacity: 65%;
+            }
 
-        19.5% {
-            opacity: 100%;
-        }
+            20.75% {
+                opacity: 100%;
+            }
 
-        20.25% {
-            opacity: 65%;
-        }
+            65% {
+                transform: scale(1);
+            }
 
-        20.75% {
-            opacity: 100%;
-        }
+            70% {
+                transform: scale(0);
+            }
 
-        65% {
-            transform: scale(1);
+            100% {
+                opacity: 100%;
+            }
         }
 
-        70% {
-            transform: scale(0);
-        }
+        @keyframes click_anim_3 {
+            0% {
+                opacity: 100%;
+            }
 
-        100% {
-            opacity: 100%;
-        }
-    }
+            26.5% {
+                opacity: 100%;
+            }
 
-    @keyframes click_anim_3 {
-        0% {
-            opacity: 100%;
-        }
+            27% {
+                opacity: 65%;
+            }
 
-        26.5% {
-            opacity: 100%;
-        }
+            27.75% {
+                opacity: 100%;
+            }
 
-        27% {
-            opacity: 65%;
+            100% {
+                opacity: 100%;
+            }
         }
 
-        27.75% {
-            opacity: 100%;
-        }
+        @keyframes hide_buttons {
+            0% {
+                transform: scale(1);
+            }
 
-        100% {
-            opacity: 100%;
-        }
-    }
+            65% {
+                transform: scale(1);
+            }
 
-    @keyframes hide_buttons {
-        0% {
-            transform: scale(1);
-        }
+            70% {
+                transform: scale(0);
+            }
 
-        65% {
-            transform: scale(1);
+            100% {
+                transform: scale(1);
+            }
         }
 
-        70% {
-            transform: scale(0);
-        }
+        @keyframes sulurit {
 
-        100% {
-            transform: scale(1);
-        }
-    }
+            0% {
+                transform: scaleY( 1 );
+            }
 
-    @keyframes sulurit {
+            13.5% {
+                transform: scaleY( 1 );
+            }
 
-        0% {
-            transform: scaleY( 1 );
-        }
+            15% {
+                transform: scaleY( 0.6 );
+            }
 
-        13.5% {
-            transform: scaleY( 1 );
-        }
+            20.25% {
+                transform: scaleY( 0.6 );
+            }
 
-        15% {
-            transform: scaleY( 0.6 );
-        }
+            21.75% {
+                transform: scaleY( 0.4 );
+            }
 
-        20.25% {
-            transform: scaleY( 0.6 );
-        }
+            90% {
+                transform: scaleY( 0.4 );
+            }
 
-        21.75% {
-            transform: scaleY( 0.4 );
+            100% {
+                transform: scaleY( 1 );
+            }
         }
 
-        90% {
-            transform: scaleY( 0.4 );
-        }
+        @keyframes sulurit_number_1 {
 
-        100% {
-            transform: scaleY( 1 );
-        }
-    }
+            0% {
+                opacity: 100%;
+                transform: scaleY( 1 );
+            }
 
-    @keyframes sulurit_number_1 {
+            13.5% {
+                opacity: 100%;
+                transform: scaleY( 1 );
+            }
 
-        0% {
-            opacity: 100%;
-            transform: scaleY( 1 );
-        }
+            15% {
+                opacity: 0%;
+                transform: scaleY( 1.6 );
+            }
 
-        13.5% {
-            opacity: 100%;
-            transform: scaleY( 1 );
-        }
+            20.25% {
+                transform: scaleY( 1.6 );
+            }
 
-        15% {
-            opacity: 0%;
-            transform: scaleY( 1.6 );
-        }
+            21.75% {
+                transform: scaleY( 2.5 );
+            }
 
-        20.25% {
-            transform: scaleY( 1.6 );
-        }
+            90% {
+                opacity: 0%;
+                transform: scaleY( 2.5 );
+            }
 
-        21.75% {
-            transform: scaleY( 2.5 );
+            100% {
+                opacity: 100%;
+                transform: scaleY( 1 );
+            }
         }
 
-        90% {
-            opacity: 0%;
-            transform: scaleY( 2.5 );
-        }
+        @keyframes sulurit_number_2 {
 
-        100% {
-            opacity: 100%;
-            transform: scaleY( 1 );
-        }
-    }
+            0% {
+                opacity: 0%;
+                transform: scaleY( 1 );
+            }
 
-    @keyframes sulurit_number_2 {
+            13.5% {
+                opacity: 0%;
+                transform: scaleY( 1 );
+            }
 
-        0% {
-            opacity: 0%;
-            transform: scaleY( 1 );
-        }
+            15% {
+                opacity: 100%;
+                transform: scaleY( 1.6 );
+            }
 
-        13.5% {
-            opacity: 0%;
-            transform: scaleY( 1 );
-        }
+            20.25% {
+                opacity: 100%;
+                transform: scaleY( 1.6 );
+            }
 
-        15% {
-            opacity: 100%;
-            transform: scaleY( 1.6 );
-        }
+            21.75% {
+                opacity: 0%;
+                transform: scaleY( 2.5 );
+            }
 
-        20.25% {
-            opacity: 100%;
-            transform: scaleY( 1.6 );
-        }
+            90% {
+                opacity: 0%;
+                transform: scaleY( 2.5 );
+            }
 
-        21.75% {
-            opacity: 0%;
-            transform: scaleY( 2.5 );
+            100% {
+                opacity: 0%;
+                transform: scaleY( 1 );
+            }
         }
 
-        90% {
-            opacity: 0%;
-            transform: scaleY( 2.5 );
-        }
+        @keyframes sulurit_number_3 {
 
-        100% {
-            opacity: 0%;
-            transform: scaleY( 1 );
-        }
-    }
+            0% {
+                opacity: 0%;
+                transform: scaleY( 1 );
+            }
 
-    @keyframes sulurit_number_3 {
+            13.5% {
+                opacity: 0%;
+                transform: scaleY( 1 );
+            }
 
-        0% {
-            opacity: 0%;
-            transform: scaleY( 1 );
-        }
+            15% {
+                opacity: 0%;
+                transform: scaleY( 1.6 );
+            }
 
-        13.5% {
-            opacity: 0%;
-            transform: scaleY( 1 );
-        }
+            20.25% {
+                opacity: 0%;
+                transform: scaleY( 1.6 );
+            }
 
-        15% {
-            opacity: 0%;
-            transform: scaleY( 1.6 );
-        }
+            21.75% {
+                opacity: 100%;
+                transform: scaleY( 2.5 );
+            }
 
-        20.25% {
-            opacity: 0%;
-            transform: scaleY( 1.6 );
-        }
+            90% {
+                opacity: 100%;
+                transform: scaleY( 2.5 );
+            }
 
-        21.75% {
-            opacity: 100%;
-            transform: scaleY( 2.5 );
+            100% {
+                opacity: 0%;
+                transform: scaleY( 1 );
+            }
         }
 
-        90% {
-            opacity: 100%;
-            transform: scaleY( 2.5 );
-        }
 
-        100% {
-            opacity: 0%;
-            transform: scaleY( 1 );
-        }
-    }
 
+        @keyframes linurit_blatt {
 
+            0% {
+                transform: scaleY( 1 );
+            }
 
-    @keyframes linurit_blatt {
+            13.5% {
+                transform: scaleY( 1 );
+            }
 
-        0% {
-            transform: scaleY( 1 );
-        }
+            15% {
+                transform: scaleY( -0.5 );
+            }
 
-        13.5% {
-            transform: scaleY( 1 );
-        }
+            20.25% {
+                transform: scaleY( -0.5 );
+            }
 
-        15% {
-            transform: scaleY( -0.5 );
-        }
+            21.75% {
+                transform: scaleY( -0.8 );
+            }
 
-        20.25% {
-            transform: scaleY( -0.5 );
-        }
+            90% {
+                transform: scaleY( -0.8 );
+            }
 
-        21.75% {
-            transform: scaleY( -0.8 );
+            100% {
+                transform: scaleY( 1 );
+            }
         }
 
-        90% {
-            transform: scaleY( -0.8 );
-        }
+        @keyframes linurit_gratt {
 
-        100% {
-            transform: scaleY( 1 );
-        }
-    }
+            0% {
+                transform: scaleY( 1 );
+            }
 
-    @keyframes linurit_gratt {
+            13.5% {
+                transform: scaleY( 1 );
+            }
 
-        0% {
-            transform: scaleY( 1 );
-        }
+            15% {
+                transform: scaleY( 0.5 );
+            }
 
-        13.5% {
-            transform: scaleY( 1 );
-        }
+            20.25% {
+                transform: scaleY( 0.5 );
+            }
 
-        15% {
-            transform: scaleY( 0.5 );
-        }
+            21.75% {
+                transform: scaleY( -0.6 );
+            }
 
-        20.25% {
-            transform: scaleY( 0.5 );
-        }
+            90% {
+                transform: scaleY( -0.6 );
+            }
 
-        21.75% {
-            transform: scaleY( -0.6 );
+            100% {
+                transform: scaleY( 1 );
+            }
         }
 
-        90% {
-            transform: scaleY( -0.6 );
-        }
+        @keyframes decrease_opac {
+            0% {
+                opacity: 100%;
+            }
 
-        100% {
-            transform: scaleY( 1 );
-        }
-    }
+            27% {
+                opacity: 100%;
+            }
 
-    @keyframes decrease_opac {
-        0% {
-            opacity: 100%;
-        }
+            27.5% {
+                opacity: 40%;
+            }
 
-        27% {
-            opacity: 100%;
-        }
+            90% {
+                opacity: 40%;
+            }
 
-        27.5% {
-            opacity: 40%;
+            100% {
+                opacity: 100%;
+            }
         }
 
-        90% {
-            opacity: 40%;
-        }
+        @keyframes reveal_all_keys {
+            0% {
+                opacity: 0%;
+                left: 200px;
+            }
 
-        100% {
-            opacity: 100%;
-        }
-    }
+            19.5% {
+                opacity: 0%;
+            }
 
-    @keyframes reveal_all_keys {
-        0% {
-            opacity: 0%;
-            left: 200px;
-        }
+            21% {
+                opacity: 100%;
+            }
 
-        19.5% {
-            opacity: 0%;
-        }
+            60% {
+                opacity: 100%;
+                left: 200px;
+            }
 
-        21% {
-            opacity: 100%;
-        }
+            61% {
+                opacity: 0%;
+            }
 
-        60% {
-            opacity: 100%;
-            left: 200px;
+            100% {
+                opacity: 0%;
+                left: 245px;
+            }
         }
 
-        61% {
-            opacity: 0%;
-        }
+        @keyframes samtals_1 {
+            0% {
+                opacity: 0%;
+            }
 
-        100% {
-            opacity: 0%;
-            left: 245px;
-        }
-    }
+            13.5% {
+                opacity: 0%;
+            }
 
-    @keyframes samtals_1 {
-        0% {
-            opacity: 0%;
-        }
+            15% {
+                opacity: 100%;
+            }
 
-        13.5% {
-            opacity: 0%;
-        }
+            20% {
+                opacity: 100%;
+            }
 
-        15% {
-            opacity: 100%;
-        }
+            21% {
+                opacity: 0%;
+            }
 
-        20% {
-            opacity: 100%;
+            100% {
+                opacity: 0%;
+            }
         }
 
-        21% {
-            opacity: 0%;
-        }
+        @keyframes samtals_2 {
+            0% {
+                opacity: 0%;
+                left: 200px;
+            }
 
-        100% {
-            opacity: 0%;
-        }
-    }
+            19.5% {
+                opacity: 0%;
+                left: 200px;
+            }
 
-    @keyframes samtals_2 {
-        0% {
-            opacity: 0%;
-            left: 200px;
-        }
+            21% {
+                opacity: 100%;
+                left: 245px;
+            }
 
-        19.5% {
-            opacity: 0%;
-            left: 200px;
-        }
+            60% {
+                opacity: 100%;
+                left: 245px;
+            }
 
-        21% {
-            opacity: 100%;
-            left: 245px;
-        }
+            61% {
+                opacity: 0%;
+            }
 
-        60% {
-            opacity: 100%;
-            left: 245px;
+            100% {
+                opacity: 0%;
+                left: 245px;
+            }
         }
 
-        61% {
-            opacity: 0%;
-        }
+        @keyframes hide_default_keys {
+            0% {
+                opacity: 0%;
+            }
 
-        100% {
-            opacity: 0%;
-            left: 245px;
-        }
-    }
+            13% {
+                opacity: 0%;
+            }
 
-    @keyframes hide_default_keys {
-        0% {
-            opacity: 0%;
-        }
+            13.5% {
+                opacity: 100%;
+            }
 
-        13% {
-            opacity: 0%;
-        }
+            60% {
+                opacity: 100%;
+            }
 
-        13.5% {
-            opacity: 100%;
-        }
+            61% {
+                opacity: 0%;
+            }
 
-        60% {
-            opacity: 100%;
+            100% {
+                opacity: 0%;
+            }
         }
 
-        61% {
-            opacity: 0%;
-        }
+        @keyframes header_click_1 {
+            0% {
+                opacity: 100%;
+            }
 
-        100% {
-            opacity: 0%;
-        }
-    }
+            12.5% {
+                opacity: 100%;
+            }
 
-    @keyframes header_click_1 {
-        0% {
-            opacity: 100%;
-        }
+            13% {
+                opacity: 0%;
+            }
 
-        12.5% {
-            opacity: 100%;
-        }
+            98% {
+                opacity: 0%;
+            }
 
-        13% {
-            opacity: 0%;
+            100% {
+                opacity: 100%;
+            }
         }
 
-        98% {
-            opacity: 0%;
-        }
+        @keyframes header_click_2 {
+            0% {
+                opacity: 0%;
+            }
 
-        100% {
-            opacity: 100%;
-        }
-    }
+            12.5% {
+                opacity: 0%;
+            }
 
-    @keyframes header_click_2 {
-        0% {
-            opacity: 0%;
-        }
+            13.5% {
+                opacity: 100%;
+            }
 
-        12.5% {
-            opacity: 0%;
-        }
+            20% {
+                opacity: 100%;
+            }
 
-        13.5% {
-            opacity: 100%;
-        }
+            21% {
+                opacity: 0%;
+            }
 
-        20% {
-            opacity: 100%;
+            100% {
+                opacity: 0%;
+            }
         }
 
-        21% {
-            opacity: 0%;
-        }
+        @keyframes header_click_3 {
+            0% {
+                opacity: 0%;
+            }
 
-        100% {
-            opacity: 0%;
-        }
-    }
+            20% {
+                opacity: 0%;
+            }
 
-    @keyframes header_click_3 {
-        0% {
-            opacity: 0%;
-        }
+            21% {
+                opacity: 100%;
+            }
 
-        20% {
-            opacity: 0%;
-        }
+            98% {
+                opacity: 100%;
+            }
 
-        21% {
-            opacity: 100%;
+            100% {
+                opacity: 0%;
+            }
         }
 
-        98% {
-            opacity: 100%;
-        }
+        @keyframes card_title_1 {
+            0% {
+                opacity: 0%;
+            }
 
-        100% {
-            opacity: 0%;
-        }
-    }
+            12.5% {
+                opacity: 0%;
+            }
 
-    @keyframes card_title_1 {
-        0% {
-            opacity: 0%;
-        }
+            13% {
+                opacity: 100%;
+            }
 
-        12.5% {
-            opacity: 0%;
-        }
+            19.5% {
+                opacity: 100%;
+            }
 
-        13% {
-            opacity: 100%;
-        }
+            20.5% {
+                opacity: 0%;
+            }
 
-        19.5% {
-            opacity: 100%;
+            100% {
+                opacity: 0%;
+            }
         }
 
-        20.5% {
-            opacity: 0%;
-        }
+        @keyframes card_title_2 {
+            0% {
+                opacity: 0%;
+            }
 
-        100% {
-            opacity: 0%;
-        }
-    }
+            20% {
+                opacity: 0%;
+            }
 
-    @keyframes card_title_2 {
-        0% {
-            opacity: 0%;
-        }
+            21% {
+                opacity: 100%;
+            }
 
-        20% {
-            opacity: 0%;
-        }
+            26% {
+                opacity: 100%;
+            }
 
-        21% {
-            opacity: 100%;
-        }
+            27% {
+                opacity: 0%;
+            }
 
-        26% {
-            opacity: 100%;
+            100% {
+                opacity: 0%;
+            }
         }
 
-        27% {
-            opacity: 0%;
-        }
+        @keyframes card_title_3 {
+            0% {
+                opacity: 0%;
+            }
 
-        100% {
-            opacity: 0%;
-        }
-    }
+            26.5% {
+                opacity: 0%;
+            }
 
-    @keyframes card_title_3 {
-        0% {
-            opacity: 0%;
-        }
+            27% {
+                opacity: 100%;
+            }
 
-        26.5% {
-            opacity: 0%;
-        }
+            60% {
+                opacity: 100%;
+            }
 
-        27% {
-            opacity: 100%;
-        }
+            61% {
+                opacity: 0%;
+            }
 
-        60% {
-            opacity: 100%;
+            100% {
+                opacity: 0%;
+            }
         }
 
-        61% {
-            opacity: 0%;
-        }
+        @keyframes numbers_1 {
+            0% {
+                opacity: 100%;
+            }
 
-        100% {
-            opacity: 0%;
-        }
-    }
+            26% {
+                opacity: 100%;
+            }
 
-    @keyframes numbers_1 {
-        0% {
-            opacity: 100%;
-        }
+            27% {
+                opacity: 0%;
+            }
 
-        26% {
-            opacity: 100%;
-        }
+            98% {
+                opacity: 0%;
+            }
 
-        27% {
-            opacity: 0%;
+            100% {
+                opacity: 100%;
+            }
         }
 
-        98% {
-            opacity: 0%;
-        }
+        @keyframes flip_panel {
 
-        100% {
-            opacity: 100%;
-        }
-    }
+            0% {
+                opacity: 0%;
+                transform: rotateX(65deg) scale(0.5);
+                box-shadow: 3px -3px 5px #53565A;
+            }
 
-    @keyframes flip_panel {
+            12.5% {
+                opacity: 0%;
+                transform: rotateX(65deg);
+                box-shadow: 3px -3px 5px #53565A;
+            }
 
-        0% {
-            opacity: 0%;
-            transform: rotateX(65deg);
-            box-shadow: 3px -3px 5px #53565A;
-        }
+            15% {
+                opacity: 100%;
+                transform: rotateX(0deg);
+                box-shadow: 3px 3px 5px #53565A;
+            }
 
-        12.5% {
-            opacity: 0%;
-            transform: rotateX(65deg);
-            box-shadow: 3px -3px 5px #53565A;
-        }
+            19.5% {
+                height: 180px;
+            }
 
-        15% {
-            opacity: 100%;
-            transform: rotateX(0deg);
-            box-shadow: 3px 3px 5px #53565A;
-        }
+            21.5% {
+                height: 265px;
+            }
 
-        19.5% {
-            height: 180px;
-        }
+            60% {
+                opacity: 100%;
+                transform: rotateX(0deg);
+                box-shadow: 3px 3px 5px #53565A;
+                height: 265px;
+            }
 
-        21.5% {
-            height: 265px;
-        }
+            65% {
+                opacity: 0%;
+                transform: rotateX(90deg);
+                box-shadow: 3px -3px 5px #53565A;
+                height: 180px;
+            }
 
-        60% {
-            opacity: 100%;
-            transform: rotateX(0deg);
-            box-shadow: 3px 3px 5px #53565A;
-            height: 265px;
+            100% {
+                opacity: 0%;
+                transform: rotateX(65) scale(0.5);
+                box-shadow: 3px -3px 5px #53565A;
+            }
         }
 
-        65% {
-            opacity: 0%;
-            transform: rotateX(90deg);
-            box-shadow: 3px -3px 5px #53565A;
-            height: 180px;
-        }
+        @keyframes hide_sidebar {
 
-        100% {
-            opacity: 0%;
-            transform: rotateX(65);
-            box-shadow: 3px -3px 5px #53565A;
-        }
-    }
-    @keyframes hide_sidebar {
+            0% {
+                left: 0;
+            }
 
-        0% {
-            left: 0;
-        }
+            62.5% {
+                left: 0;
+            }
 
-        62.5% {
-            left: 0;
-        }
+            70% {
+                left: -300px;
+            }
 
-        70% {
-            left: -300px;
-        }
+            95% {
+                left: -300px;
+            }
 
-        95% {
-            left: -300px;
+            100% {
+                left: 0;
+            }
         }
 
-        100% {
-            left: 0;
-        }
-    }
-    @keyframes hide_tables {
-        0% {
-            margin-right: 290x;
-        }
+        @keyframes hide_tables {
+            0% {
+                margin-right: 290x;
+            }
 
-        62.5% {
-            margin-right: 290px;
-        }
+            62.5% {
+                margin-right: 290px;
+            }
 
-        70% {
-            margin-right: -500px;
-        }
+            70% {
+                margin-right: -500px;
+            }
 
-        95% {
-            margin-right: -500px;
-        }
+            95% {
+                margin-right: -500px;
+            }
 
-        100% {
-            margin-right: 290px;
+            100% {
+                margin-right: 290px;
+            }
         }
-    }
 </style>
 
 <section id="export-container" class="export__container">
@@ -1418,22 +1590,25 @@
         <div class="pd-row" style="margin-top: -175px;">
             <div class="header__grid">
                 <div class="z-20 height">
-                    <div class="header__content">
+                    <div class="header__content" id="header_box" >
                         <h1 class="heading">
-                            <div style="line-height: 65px; letter-spacing: -3px; /* box-shadow: 11px 11px 0px black; */ color: black; font-size: 1.75em; box-shadow: 2px 2px 2px rgb(0 0 0 / 45%); background: white; padding: 15px 15px 015px; font-weight: 900; /* font-family: Times New Roman; */ /* padding: 0 15px 0 15px; */ width: 586px; ">Umbreyttu þinni</div>
-                            <div style="letter-spacing: -3px; color: black; box-shadow: 2px 2px 2px rgb(0 0 0 / 45%); background: white; /* box-shadow: 11px 11px 0px black; */ font-size: 1.8em; font-weight: 900; /* font-family: Times New Roman; */ padding: 0 15px 0 15px; width: 554px; ">ákvarðanatöku</div>
-                            <div style=" word-spacing: 5px; color: white; /* font-weight: 900; */ background: black; box-shadow: 2px 2px 2px rgb(0 0 0 / 45%); font-size: 20px; width: 560px; padding: 10px; font-weight: bold;">RÉTTAR ÁKVARÐANIR BYRJA Á RÉTTUM TÖLUM, Á RÉTTUM TÍMA, RÉTT FRAMSETTAR Í ÞÍNUM HÖNDUM</div>
+                            <div id="title_1">Umbreyttu þinni</div>
+                            <div id="title_2">ákvarðanatöku</div>
+                            <div id="sub_title">RÉTTAR ÁKVARÐANIR BYRJA Á RÉTTUM TÖLUM, Á RÉTTUM TÍMA, RÉTT FRAMSETTAR Í ÞÍNUM HÖNDUM</div>
                         </h1>
                         <div style="margin-top: 20px;">
                             <button onclick="window.open('https://deloittereports.is/Home/Booking','_blank');" style="" id="book_demo"><a href="javascript:void(0);">Bóka demó</a></button>
                             <button onclick="window.open('https://deloittereports.is/','_blank');" style="padding: 10px; font-size: 1.25em; color: white; font-weight: bolder; letter-spacing: 1.5px; border: 2px solid white; width: 150px; box-shadow: 3px 3px 2px rgb(0 0 0 / 40%);"><a href="javascript:void(0);">Skrá inn</a></button>
                         </div>
-                        <div style=" word-spacing: 5px; color: white; /* font-weight: 900; */ font-size: 25px; width: 650px; padding: 10px; top: 510px; position: absolute; line-height: 50px; font-size: 23px;"><span style=" font-size: 26px; word-spacing: 3px;">Rekstrargreiningar Deloitte í mánaðarlegri áskrift.</span> <br /> <button onclick="window.open('https://deloittereports.is/Home/TrialBooking','_blank');" style="margin:0; width: 500px; padding: 5px; margin-top: 8px;" id="book_demo"><a href="javascript:void(0);">Prófaðu frítt í 30 daga!</a></button></div>
+                        <div style=" word-spacing: 5px; color: white; /* font-weight: 900; */ font-size: 25px; width: 650px; margin: 25px 0; line-height: 50px; font-size: 23px;">
+                            <span style="" id="try_for_free_text">Rekstrargreiningar Deloitte í mánaðarlegri áskrift.</span> <br /> 
+                            <button onclick="window.open('https://deloittereports.is/Home/TrialBooking','_blank');" id="try_for_free_button" style="" id="book_demo"><a href="javascript:void(0);">Prófaðu frítt í 30 daga!</a></button>
+                        </div>
                     </div>
                     <!-- <div style=" position: absolute; background: #fcfcfc; width: 1080px; height: 675px; right: -302px; top: 50px; border-radius: 5px;"></div>-->
 
 
-                    <div style="background: white; width: 650px; height: 650px; position: absolute; border-radius: 100%; top: 80px; right: 150px; box-shadow: -2px 2px 5px #75787B; transform: scale(0);  " id="deloitte_circle">
+                    <div style="background: white; width: 650px; height: 650px; position: absolute; border-radius: 100%; box-shadow: -2px 2px 5px #75787B; transform: scale(0);  " id="deloitte_circle">
 
                         <div style="height: 198px; width: 350px; position: absolute; z-index: 255; background: white; top: 25px; left: 25px; box-shadow: 2px 2px 2px #53565A; opacity: 0%; transform: scale(0.1); overflow: visible;" id="report_container_1">
                             <div style="background: #cccccc; height: 100px; width: 100%; position: absolute; left: 0; top: 0;"></div>
@@ -1472,67 +1647,68 @@
 
                     </div>
 
+                    <div id="numbers_panel_scale">
+                        <div style="position: absolute; background: #f9f9f9; transform: scale(1.5); padding: 0px 0px 15px 0px; color: #605e5c; font-weight: 100; z-index: 15; font-size: 1.25em; top: 325px; right: 310px; width: 500px; height: 180px; box-shadow: -3px 3px 5px #53565A; opacity: 0%; border: 1px solid #e5e5e5; letter-spacing: 1px; font-weight: bolder; overflow: hidden;" id="numbers_panel">
 
-                    <div style="position: absolute; background: #f9f9f9; padding: 0px 0px 15px 0px; color: #605e5c; font-weight: 100; z-index: 15; font-size: 1.25em; top: 325px; right: 310px; width: 500px; height: 180px; box-shadow: -3px 3px 5px #53565A; opacity: 0%; border: 1px solid #e5e5e5; letter-spacing: 1px; font-weight: bolder; overflow: hidden;" id="numbers_panel">
+                            <div style="transform: translateY(0px)">
+                                <h1 style="text-align: center; line-height: 22.5px; padding: 5px 0 5px 0; position: relative;">
+                                    <div id="framlegd_card">
+                                        Framlegð á ári<br />
+                                        <span style="letter-spacing: 0; font-weight: 100;">Borið saman við sl. ári</span>
+                                    </div>
+                                    <div style=" position: absolute; text-align: center; top: 5px; left: 161px; opacity: 0%;" id="ebitda_card">
+                                        EBITDA á ári<br />
+                                        <span style="letter-spacing: 0; font-weight: 100;">Borið saman við sl. ári</span>
+                                    </div>
+                                    <div style=" position: absolute; text-align: center; top: 5px; left: 100px; opacity: 0%;" id="ebitda_card_month">
+                                        EBITDA í maí<br />
+                                        <span style="letter-spacing: 0; font-weight: 100;">Borið saman við sama mánuð á sl. ári</span>
+                                    </div>
+                                </h1>
 
-                        <div style="transform: translateY(0px)">
-                            <h1 style="text-align: center; line-height: 22.5px; padding: 5px 0 5px 0; position: relative;">
-                                <div id="framlegd_card">
-                                    Framlegð á ári<br />
-                                    <span style="letter-spacing: 0; font-weight: 100;">Borið saman við sl. ári</span>
+
+                                <div style="background: #eaeaea;border-bottom: 1px solid white;padding: 5px 15px 5px 15px;" id="default_key_1">
+                                    + Sala
+                                    <span style="float: right; font-weight: 100; letter-spacing: 0;" id="year_hide">22,632</span>
+                                    <span style="float: right; font-weight: 100; letter-spacing: 0; position: absolute; right: 15px; opacity: 0%;" id="ebitda_card_month">9,052</span> <!---->
+                                    <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #86BC25; width: 80px;" id="year_hide">32,541</span>
+                                    <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #86BC25; width: 80px; opacity: 0%; position: absolute; left: 348px;" id="ebitda_card_month">13,016</span> <!---->
                                 </div>
-                                <div style=" position: absolute; text-align: center; top: 5px; left: 161px; opacity: 0%;" id="ebitda_card">
-                                    EBITDA á ári<br />
-                                    <span style="letter-spacing: 0; font-weight: 100;">Borið saman við sl. ári</span>
+                                <div style="background: #eaeaea;border-bottom: 1px solid white;padding: 5px 15px 5px 15px;" id="default_key_2">
+                                    + Vörunotkun
+                                    <span style="float: right; font-weight: 100; letter-spacing: 0;" id="year_hide">(4,468)</span>
+                                    <span style="float: right; font-weight: 100; letter-spacing: 0; position: absolute; right: 15px; opacity: 0%;" id="ebitda_card_month">(1,787)</span> <!---->
+                                    <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px;" id="year_hide">(10,243)</span>
+                                    <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px; opacity: 0%; position: absolute; left: 348px;" id="ebitda_card_month">(4,097)</span> <!---->
                                 </div>
-                                <div style=" position: absolute; text-align: center; top: 5px; left: 100px; opacity: 0%;" id="ebitda_card_month">
-                                    EBITDA í maí<br />
-                                    <span style="letter-spacing: 0; font-weight: 100;">Borið saman við sama mánuð á sl. ári</span>
+                                <div style="padding: 5px 15px 5px 15px; color: black; position:absolute; left: 245px;" id="samtals_1">
+                                    <span style="float: right; font-weight: 100; letter-spacing: 0;">18,167</span>
+                                    <span style="float: right; font-weight: 100; padding-right: 20px; letter-spacing: 0;">22,298</span>
+                                    <span style="float: right; padding-right: 15px;">Samtals</span>
                                 </div>
-                            </h1>
+                                <div style="background: #eaeaea;border-bottom: 1px solid white;padding: 5px 15px 5px 15px; opacity: 0%;" id="reveal_key_1">
+                                    + Laun og Launat.gjöld
+                                    <span style="float: right; font-weight: 100; letter-spacing: 0;" id="year_hide">(3,579)</span>
+                                    <span style="float: right; font-weight: 100; letter-spacing: 0; position: absolute; right: 15px; opacity: 0%;" id="ebitda_card_month">(1,431)</span> <!---->
+                                    <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px;" id="year_hide">(3,668)</span>
+                                    <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px; opacity: 0%; position: absolute; left: 348px;" id="ebitda_card_month">(1,467)</span> <!---->
+                                </div>
+                                <div style="background: #eaeaea; border-bottom: 1px solid white; padding: 5px 15px 5px 15px; opacity: 0%;" id="reveal_key_2">
+                                    + Annar Rekstrarkost.
+                                    <span style="float: right; font-weight: 100; letter-spacing: 0;" id="year_hide">(7,454)</span>
+                                    <span style="float: right; font-weight: 100; letter-spacing: 0; position: absolute; right: 15px; opacity: 0%;" id="ebitda_card_month">(2,981)</span> <!---->
+                                    <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px;" id="year_hide">(1,856)</span>
+                                    <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px; opacity: 0%; position: absolute; left: 348px;" id="ebitda_card_month">(742)</span> <!---->
+                                </div>
+                                <div style="padding: 5px 15px 5px 15px; color: black; position: absolute; left: 245px; opacity: 0%;" id="samtals_2">
+                                    <span style="float: right; font-weight: 100; letter-spacing: 0;" id="year_hide">7,131</span>
+                                    <span style="float: right; font-weight: 100; letter-spacing: 0; position: absolute; right: 15px; opacity: 0%;" id="ebitda_card_month">2,852</span> <!---->
+                                    <span style="float: right; font-weight: 100; margin-right: 20px; letter-spacing: 0;" id="year_hide">16,774</span>
+                                    <span style="float: right; font-weight: 100; margin-right: 20px; letter-spacing: 0; opacity: 0%; position: absolute; left: 105px;" id="ebitda_card_month">6,710</span>
+                                    <span style="float: right; padding-right: 15px;">Samtals</span>
+                                </div>
 
-
-                            <div style="background: #eaeaea;border-bottom: 1px solid white;padding: 5px 15px 5px 15px;" id="default_key_1">
-                                + Sala
-                                <span style="float: right; font-weight: 100; letter-spacing: 0;" id="year_hide">22,632</span>
-                                <span style="float: right; font-weight: 100; letter-spacing: 0; position: absolute; right: 15px; opacity: 0%;" id="ebitda_card_month">9,052</span> <!---->
-                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #86BC25; width: 80px;" id="year_hide">32,541</span>
-                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #86BC25; width: 80px; opacity: 0%; position: absolute; left: 348px;" id="ebitda_card_month">13,016</span> <!---->
                             </div>
-                            <div style="background: #eaeaea;border-bottom: 1px solid white;padding: 5px 15px 5px 15px;" id="default_key_2">
-                                + Vörunotkun
-                                <span style="float: right; font-weight: 100; letter-spacing: 0;" id="year_hide">(4,468)</span>
-                                <span style="float: right; font-weight: 100; letter-spacing: 0; position: absolute; right: 15px; opacity: 0%;" id="ebitda_card_month">(1,787)</span> <!---->
-                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px;" id="year_hide">(10,243)</span>
-                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px; opacity: 0%; position: absolute; left: 348px;" id="ebitda_card_month">(4,097)</span> <!---->
-                            </div>
-                            <div style="padding: 5px 15px 5px 15px; color: black; position:absolute; left: 245px;" id="samtals_1">
-                                <span style="float: right; font-weight: 100; letter-spacing: 0;">18,167</span>
-                                <span style="float: right; font-weight: 100; padding-right: 20px; letter-spacing: 0;">22,298</span>
-                                <span style="float: right; padding-right: 15px;">Samtals</span>
-                            </div>
-                            <div style="background: #eaeaea;border-bottom: 1px solid white;padding: 5px 15px 5px 15px; opacity: 0%;" id="reveal_key_1">
-                                + Laun og Launat.gjöld
-                                <span style="float: right; font-weight: 100; letter-spacing: 0;" id="year_hide">(3,579)</span>
-                                <span style="float: right; font-weight: 100; letter-spacing: 0; position: absolute; right: 15px; opacity: 0%;" id="ebitda_card_month">(1,431)</span> <!---->
-                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px;" id="year_hide">(3,668)</span>
-                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px; opacity: 0%; position: absolute; left: 348px;" id="ebitda_card_month">(1,467)</span> <!---->
-                            </div>
-                            <div style="background: #eaeaea; border-bottom: 1px solid white; padding: 5px 15px 5px 15px; opacity: 0%;" id="reveal_key_2">
-                                + Annar Rekstrarkost.
-                                <span style="float: right; font-weight: 100; letter-spacing: 0;" id="year_hide">(7,454)</span>
-                                <span style="float: right; font-weight: 100; letter-spacing: 0; position: absolute; right: 15px; opacity: 0%;" id="ebitda_card_month">(2,981)</span> <!---->
-                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px;" id="year_hide">(1,856)</span>
-                                <span style="float: right; font-weight: 100; padding-right: 15px; letter-spacing: 0; font-weight: bolder; color: #DA291C; width: 80px; opacity: 0%; position: absolute; left: 348px;" id="ebitda_card_month">(742)</span> <!---->
-                            </div>
-                            <div style="padding: 5px 15px 5px 15px; color: black; position: absolute; left: 245px; opacity: 0%;" id="samtals_2">
-                                <span style="float: right; font-weight: 100; letter-spacing: 0;" id="year_hide">7,131</span>
-                                <span style="float: right; font-weight: 100; letter-spacing: 0; position: absolute; right: 15px; opacity: 0%;" id="ebitda_card_month">2,852</span> <!---->
-                                <span style="float: right; font-weight: 100; margin-right: 20px; letter-spacing: 0;" id="year_hide">16,774</span>
-                                <span style="float: right; font-weight: 100; margin-right: 20px; letter-spacing: 0; opacity: 0%; position: absolute; left: 105px;" id="ebitda_card_month">6,710</span>
-                                <span style="float: right; padding-right: 15px;">Samtals</span>
-                            </div>
-
                         </div>
                     </div>
 
@@ -1661,22 +1837,6 @@
             <div class="pd-row" style="padding-bottom: 75px;">
                 <div class="w-full pd-content">
 
-                    <!--
-                    <div style="padding-top: 20px; width: 45%; height: 300px; text-align: left; float: left; margin-top: 60px; margin-right: 150px;">
-                        <div style="width: 100%; line-height: 52.5px;">
-                            <h1 class="font-bold" style="font-size: 3.1em; ">
-                                <span style="background: black; padding: 15px; line-height: 90px;">Góð innsýn í reksturinn</span>
-                            </h1>
-                        </div>
-                        <p style=" width: 100%; font-size: 1.5em; color: white; margin-top: 25px; word-spacing: 5px; /* font-weight: bolder; */">
-                            Greiningarlausnin okkar gerir þér kleift að kanna og skilja gögnin þín með nýjum og einstökum aðferðum og veita þér aðgerðarhæfa innsýn og ráðleggingar.
-                        </p>
-                    </div>
-                                    <div style="width: 450px; height: 330px; float: left; margin-top: 48px;">
-                                        <img src="Logic_myndir/magnify.PNG" style="height: 100%;">
-                                    </div>
-                                    -->
-
                     <div style="padding-top: 1px;">
                         <div style=" margin-left: 750px; margin-top: 100px; width: 100%;">
 
@@ -1684,7 +1844,7 @@
                             <div style="width: 95%; margin-right: 5px; font-size: 3em; width: 75%; font-weight: bolder; float: left;"> <span style="background: black; padding: 10px;">Prófaðu núna</span></div>
 
                         </div>
-                        <iframe style="box-shadow: 2px 2px 5px rgb(0 0 0 / 50%); background: #D0D0CE; margin-left: -244px; " title="Fjárhagsgreining Demo Deildir - Tekjugreining" width="1650" height="990" src="https://app.powerbi.com/view?r=eyJrIjoiZDg3ZjU5MjktMjE3Mi00N2U5LWI5OWItMGU3YTMyYzljY2UxIiwidCI6IjQwMjY1ZWI5LTY3ZTQtNGYxYi1iMDMyLTEzNGM5NjY1MWYwNSIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+                        <iframe style="box-shadow: 2px 2px 5px rgb(0 0 0 / 50%); background: #D0D0CE; margin-left: -244px; " title="Fjárhagsgreining Demo Deildir - Tekjugreining" width="140%" height="99%" src="https://app.powerbi.com/view?r=eyJrIjoiZDg3ZjU5MjktMjE3Mi00N2U5LWI5OWItMGU3YTMyYzljY2UxIiwidCI6IjQwMjY1ZWI5LTY3ZTQtNGYxYi1iMDMyLTEzNGM5NjY1MWYwNSIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 
                     </div>
                     <div style="text-align: center;">
@@ -1709,15 +1869,9 @@
                             <img src="Logic_myndir/Allar_skyrslur_1.PNG" style="box-shadow: 0 2px 2px #a0a0a0; width: 400px; position: absolute; left: 75px; top: 120px; z-index: 4; box-shadow: 2px 2px 3px #53565A;">
                         </div>
                     </div>
-                    <div style="padding-top:25px; width: 55%; height: 300px; text-align: left; float: left; margin-left: 750px; margin-top: 75px;">
-                        <div style="/*width: 80%;*/ line-height: 52.5px;">
-                            <h1 class="font-bold" style="font-size: 3.1em; ">
-                                <span style="">
-                                    Allar greiningar á einum stað
-                                </span>
-                            </h1>
-                        </div>
-                        <p style="width: 100%; font-size: 1.5em; margin-top: 5px; color: #53565A; word-spacing: 5px; ">
+                    <div style="width: 47.5%; text-align: left; float: left; position: absolute; right: 0; padding: 0px 75px;" id="value_prop_scaling">
+                        <h1 class="font-bold" style="font-size: 3em; ">Allar greiningar á einum stað</h1>
+                        <p style="width: 100%; font-size: 1.5em; margin-top: 5px; color: #53565A; word-spacing: 5px; " id="value_prop_scaling">
                             Deloitte vefgáttin tryggir stjórnendum, starfsfólki, eigendum og öðrum hagsmunaaðilum einfalt og öruggt aðgengi að fjárhagsupplýsingum. Engin þörf fyrir ný forrit, leyfi eða flókna innleiðingu. Einfalt er að stýra gagnaaðgengi fyrir hvern og einn notanda eftir því hvaða upplýsingar viðkomandi hefur leyfi til að skoða.
                         </p>
                     </div>
@@ -1728,42 +1882,25 @@
                     <div style="width: 47.5%; background: #0097A9; height: 500px; position: absolute; right: 0; box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5); z-index: -1; overflow: hidden; ">
                         <img src="Logic_myndir/IRL/Customization.jpg" style="object-fit: cover; height: 100%;">
                     </div>
-                    <div style="padding-top:25px; width: 55%; height: 300px; text-align: left; float: left; margin-left: -100px; margin-top:70px;">
-                        <div style="width: 100%; line-height: 52.5px;">
-                            <h1 class="font-bold" style="font-size: 3.1em;">
-                                Einfalt að breyta
-                            </h1>
-                        </div>
-                        <p style=" width: 100%; font-size: 1.5em; color: #53565A; margin-top: 5px; line-height: 40px; word-spacing: 5px;">
-                            <!-- Komdu með tillögu um breytingar sem henta þér og þínum starfsmönnum og við mótum þína greiningu eftir því. -->
+                    <div style="width: 55%; text-align: left; float: left; position: absolute; left: 0; padding: 0px 120px;" id="value_prop_scaling">
+                        <h1 class="font-bold" style="font-size: 3em;">Einfalt að breyta</h1>
+                        <p style=" width: 100%; font-size: 1.5em; color: #53565A; margin-top: 5px; word-spacing: 5px;">
                             Eru greiningarnar okkar ekki að svara öllum þínum spurningum? Ekkert mál.
                             Við erum með hóp af sérfræðingum sem hjálpa þér að finna svörin.
                             Kerfið okkar er byggt þannig að auðvelt er að breyta og bæta við þær greiningar sem þegar eru í áskrift.
                             Þannig lágmörkum við þann tíma og kostnað sem fylgir allri sérsmíði. 
                         </p>
                     </div>
-                    <!--<img src="Logic_myndir/custom.png" style=" width: 400px; object-fit: cover; float: left; margin-left: 200px; margin-top: 105px;">-->
                 </div>
             </div>
-            <div class="pd-row" style="padding-bottom: 75px; margin-bottom: 175px;">
+            <div class="pd-row" style="padding-bottom: 75px; margin-bottom: 475px;">
                 <div class="w-full pd-content">
                     <div style="background: #00A3E0; width: 52.5%; height: 550px; position: absolute; left: 0; box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5); z-index: -1; overflow: hidden; ">
-                        <img src="Logic_myndir/IRL/Portal_fix.png" style="right: 0; height: 550px; object-fit: cover; width: 1370px; position: absolute; ">
+                        <img src="Logic_myndir/IRL/Portal_fix.png" style="right: 0; height: 100%; object-fit: cover; width: 1370px; position: absolute">
                     </div>
-
-                    <!--
-            <div style="position: absolute;">
-                <img src="Logic_myndir/user-friendly.png" style="width: 350px; margin-left: 125px; margin-top: 115px;">
-            </div>
-                -->
-                    <div style=" padding-top: 75px; width: 60%; height: 300px; text-align: left; margin-left: 750px;">
-                        <div style="width: 100%; line-height: 52.5px;">
-                            <h1 class="font-bold" style="font-size: 3.1em;">
-                                Aðstoð við ákvarðanatöku
-                            </h1>
-                        </div>
-                        <p style="width: 100%; font-size: 1.5em; color: #53565A; margin-top: 5px; line-height: 40px; word-spacing: 5px; ">
-                            <!--Hönnun okkar er auðveld í notkun og skiljanleg, á sama tíma og hún býður upp á alla nauðsynlega eiginleika sem þú þarft til að ná markmiðum þínum.-->
+                    <div style="width: 47.5%; text-align: left; float: left; position: absolute; right: 0; padding: 0px 75px;" id="value_prop_scaling">
+                        <h1 class="font-bold" style="font-size: 3em;">Aðstoð við ákvarðanatöku</h1>
+                        <p style="width: 100%; font-size: 1.5em; color: #53565A; margin-top: 5px; word-spacing: 5px; ">
                             Réttar tölur mynda grunn að góðri ákvarðanatöku. Að framreiða áreiðanlegar tölur er ekki nóg.
                             Góð greining dregur fram lykilatriðin og sýnir á sjónrænan og auðskiljanlegan hátt hvar stjórnendur eiga að beina athygli sinni.
                             Góð greining gefur tölum samhengi, sögu, vægi og aðstoðar stjórnendur við forgangsröðun ákvarðana.
@@ -1774,20 +1911,15 @@
             </div>
             <div class="pd-row" style="padding-bottom: 75px; margin-bottom: 850px;">
                 <div class="w-full pd-content">
-                    <div style=" width: 47.5%; padding-top: 150px; background: #0097A9; height: 650px; line-height: 135px; position: absolute; color: white; right: 0; box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5); z-index: 1; overflow: hidden; text-align: center;">
-                        <!--<img src="Logic_myndir/IRL/Customization.jpg" style="object-fit: cover; height: 100%;">-->
+                    <div style=" width: 47.5%; padding-top: 150px; background: #0097A9; height: 650px; line-height: 135px; position: absolute; color: white; right: 0; box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5); z-index: 1; overflow: hidden; text-align: center;" id="start_now">
                         <span style="font-size: 6em;">Þú þarft bara......</span> <br />
                         <span style="font-size: 12em; font-weight: 500;">að byrja</span>
                         <br />
-                        <button onclick="window.open('https://deloittereports.is/Home/Booking','_blank');" id="book_demo" style=" line-height: normal; padding: 15px; width: 200px; margin-top: 85px; font-size: 1.5em; margin-left: 450px; /* text-align: left; */"><a href="javascript:void(0);">Bóka Demo</a></button>
+                        <button onclick="window.open('https://deloittereports.is/Home/Booking','_blank');" id="book_demo" style=" line-height: normal; padding: 15px; width: 200px; margin-top: 85px; font-size: 1.5em; margin-right: 0px; /* text-align: left; */"><a href="javascript:void(0);">Bóka Demo</a></button>
                     </div>
-                    <div style="padding-top:25px; width: 65%; height: 300px; text-align: left; float: left; margin-left: -200px; margin-top:70px;">
-                        <div style="width: 100%; line-height: 52.5px;">
-                            <h1 class="font-bold" style="font-size: 3.1em;">
-                                Þetta á ekki að vera flókið
-                            </h1>
-                        </div>
-                        <p style=" width: 100%; font-size: 1.5em; color: #53565A; margin-top: 5px; line-height: 40px; word-spacing: 5px;">
+                    <div style="width: 55%; text-align: left; float: left; position: absolute; left: 0; padding: 0px 120px;" id="value_prop_scaling">
+                        <h1 class="font-bold" style="font-size: 3em;">Þetta á ekki að vera flókið</h1>
+                        <p style=" width: 100%; font-size: 1.5em; color: #53565A; margin-top: 5px; word-spacing: 5px;">
                             <!-- Komdu með tillögu um breytingar sem henta þér og þínum starfsmönnum og við mótum þína greiningu eftir því. -->
                             Ný tækni á að gera líf okkar einfaldara, ekki flóknara. Við innleiðingu á nýjum tæknilausnum fá notendur því miður alltof oft þessi skilaboð: <br />
 
@@ -1840,7 +1972,7 @@
             </div>
                 -->
 
-                    <div style="width: 55%; height: 400px; font-family: 'Open Sans', Calibri, sans-serif; float: left; margin-left: 55px; padding-top: 90px;">
+                    <div style="width: 55%; height: 400px; font-family: 'Open Sans', Calibri, sans-serif; float: left; padding-left: 55px; padding-top: 90px;">
                         <h1 style="line-height: 21px; letter-spacing: 2.5px;">
                             <div style="font-size: 3em;">
                                 <span style="background: white; padding: 15px; font-weight: bolder;">Hafðu samband! </span>
@@ -2316,7 +2448,6 @@
                     <div class="accordion__container" style="border-top: none;">
                         <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
                             <button @click="accordionOpen = !accordionOpen" class="accordion">
-
                                 <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
                                     Hvernig veit ég ef greiningarnar eru með nýjustu gögnin?  <!--Spurning-->
                                 </h3>
@@ -2737,7 +2868,7 @@
                     </div>
                         -->
 
-                    <div style="width: 55%; height: 400px; font-family: 'Open Sans', Calibri, sans-serif; float: left; margin-left: 55px; padding-top: 90px;">
+                    <div style="width: 55%; height: 400px; font-family: 'Open Sans', Calibri, sans-serif; float: left; padding-left: 55px; padding-top: 90px;">
                         <h1 style="line-height: 21px; letter-spacing: 2.5px;">
                             <div style="font-size: 3em;">
                                 <span style="background: white; padding: 15px; font-weight: bolder;">Hafðu samband! </span>
@@ -2770,7 +2901,7 @@
                         </p>
                     </div>
 
-                    <div style="padding-top: 0px; width: 50%; height: 250px; text-align: left; float: left; padding: 25px 45px 25px 0;">
+                    <div style="padding-top: 0px; width: 50%; height: 250px; text-align: left; float: left; padding: 25px 45px 22.5px 0;">
                         <div style="width: 80%; line-height: 52.5px;">
                             <h2 class="font-bold" style="font-size: 2.5em; ">
                                 <span style="">Hvað er viðskiptagreind?</span>
@@ -2780,17 +2911,17 @@
                             Viðskiptagreind (e. Business Intelligence)  er aðferðafræði hönnuð til að hjálpa fyrirtækjum og stofnunum til að fá betri innsýn í aðgerðir þeirra og starfshætti í gegnum gagnameðhöndlun, þ.á.m. fyrsta flokks gagnabirtingar.
                         </p>
                     </div>
-                    <div style="padding-top: 0px; width: 50%; height: 250px; text-align: left; float: left; padding: 25px;">
+                    <div style="padding-top: 0px; width: 50%; height: 250px; text-align: left; float: left; padding: 22.5px;">
                         <div style="width: 100%; line-height: 52.5px;">
                             <h2 class="font-bold" style="font-size: 2.5em; ">
                                 <span style="">Þörfin fyrir viðskiptagreind:</span>
                             </h2>
                         </div>
                         <p style="width: 100%; font-size: 1.5em; margin-top: 5px; color: #53565A; word-spacing: 5px;">
-                            Ákvörðunartaka sem er byggð á lélegum líkönum mun leiða til lélegra ákvarðana. Til að koma í veg fyrir það var viðskiptagreind hönnuð til að hjálpa stjórnendum til að taka góðar ákvarðanir byggðar á áreiðanlegum líkönum.
+                            <s> Ákvörðunartaka sem er byggð á lélegum líkönum mun leiða til lélegra ákvarðana. Til að koma í veg fyrir það var viðskiptagreind hönnuð til að hjálpa stjórnendum til að taka góðar ákvarðanir byggðar á áreiðanlegum líkönum.</s>
                         </p>
                     </div>
-                    <div style="padding-top: 0px; width: 60%; height: 250px; text-align: left; float: left; margin-top: 90px;">
+                    <div style="padding-top: 0px; width: 60%; height: 250px; text-align: left; float: left;" id="about_us_3">
                         <div style="width: 100%; line-height: 52.5px;">
                             <h2 class="font-bold" style="font-size: 2.5em; ">
                                 <span style="">Hvernig getum við hjálpað?</span>
