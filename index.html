@@ -2021,7 +2021,7 @@
                             <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
                                 <div class="">
                                     <div class="rich__body pd-wysiwyg  pd-dark">
-                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">Þú getur keypt áskrift strax (hyperlinkur - hér).</p>
+                                        <p style="font-size: 1.45em; color: black; font-weight: 100;"><a href="https://www2.deloitte.com/is/is/footerlinks/contact-us.html?icid=nextsteps_contact-us" target="_blank" style="color: blue; font-size: 1.1em; font-weight: bolder; text-decoration: underline;">Bókaðu tíma</a> í spjall og við komum þér af stað sem fyrst</p>
                                     </div>
                                 </div>
                             </div>
@@ -2208,309 +2208,312 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion__container" style="border-top: none;">
-                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
-                            <button @click="accordionOpen = !accordionOpen" class="accordion">
-
-                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
-                                    Hvar eru gögnin mín geymd?  <!--Spurning-->
-                                </h3>
-                                <div style="position:absolute;">
-                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
-                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
-                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
-                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </button>
-                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
-                                <div class="">
-                                    <div class="rich__body pd-wysiwyg  pd-dark">
-                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">
-                                            Gögnin eru geymd í þínu viðskiptakerfi. Allar gagnatengingar eru í gegnum skýið, þ.e.a.s. ekki vistuð hjá Deloitte.<!--Svar-->
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <!--
-                    <div class="accordion__container" style="border-top: none;">
-                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
-                            <button @click="accordionOpen = !accordionOpen" class="accordion">
+            <div class="accordion__container" style="border-top: none;">
+                <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+                    <button @click="accordionOpen = !accordionOpen" class="accordion">
 
-                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
-                                    Hvernig tryggir Deloitte öryggi gagna? <span style="color: red;">ÓSVARAÐ</span>
-                                </h3>
-                                <div style="position:absolute;">
-                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
-                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
-                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
-                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </button>
-                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
-                                <div class="">
-                                    <div class="rich__body pd-wysiwyg  pd-dark">
-                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                        <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                            Hvar eru gögnin mín geymd? 
+                    </h3>
+                    <div style="position:absolute;">
+                        <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                            <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                                <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                                <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                            </svg>
                         </div>
                     </div>
-                        -->
-
-                    <div class="accordion__container" style="border-top: none;">
-                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
-                            <button @click="accordionOpen = !accordionOpen" class="accordion">
-
-                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
-                                    Er einhver viðbótarkostnaður?  <!--Spurning-->
-                                </h3>
-                                <div style="position:absolute;">
-                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
-                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
-                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
-                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </button>
-                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
-                                <div class="">
-                                    <div class="rich__body pd-wysiwyg  pd-dark">
-                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">
-                                            Hýsingar-/þjónustuaðili bókhaldskerfis sem þú ert í viðskiptum hjá kann að rukka fyrir flutning gagna milli kerfa. Það er að segja þegar við sækjum gögn frá hýsingaraðila yfir í okkar kerfi. Slíkt gjald er rukkað eftir gagnamagni sem flutt er á milli hverju sinni mælt í GB. Gjaldið er samkvæmt gjaldskrá viðkomandi hýsingaraðila. Slíkt gjald er þó óverulegt þar sem mánaðarlegt gagnamagn er að öllu jöfnu frekar lítið þar sem við notumst við jaðaruppfærslu gagna (e. Incremental refresh) þar sem við náum einungis í „nýjustu“ gögnin þín og bætum þeim við í okkar gagnastraum.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__container" style="border-top: none;">
-                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
-                            <button @click="accordionOpen = !accordionOpen" class="accordion">
-
-                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
-                                    Hvað geri ég ef ég þarf aðstoð? <!--Spurning-->
-                                </h3>
-                                <div style="position:absolute;">
-                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
-                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
-                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
-                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </button>
-                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
-                                <div class="">
-                                    <div class="rich__body pd-wysiwyg  pd-dark">
-                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">
-                                            Þú getur sent póst á Magnús (moskarsson@deloitte.is) eða ef málið þolir enga bið, hringt í Ými (8951744).<!--Svar-->
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__container" style="border-top: none;">
-                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
-                            <button @click="accordionOpen = !accordionOpen" class="accordion">
-
-                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
-                                    Hvernig gef ég bókaranum mínum aðgang? <!--Spurning-->
-                                </h3>
-                                <div style="position:absolute;">
-                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
-                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
-                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
-                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </button>
-                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
-                                <div class="">
-                                    <div class="rich__body pd-wysiwyg  pd-dark">
-                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">
-                                            Þú getur búið til nýjan notenda á https://deloittereports.is/ í „Admin View“ eða haft samband við okkur og við bætum honum við.<!--Svar-->
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__container" style="border-top: none;">
-                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
-                            <button @click="accordionOpen = !accordionOpen" class="accordion">
-
-                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
-                                    Hvernig virkar aðgangsstýring gagna? <!--Spurning-->
-                                </h3>
-                                <div style="position:absolute;">
-                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
-                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
-                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
-                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </button>
-                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
-                                <div class="">
-                                    <div class="rich__body pd-wysiwyg  pd-dark">
-                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">
-                                            Aðgangsstýring er til þess að takmarka aðgengi gagna fyrir ákveðna notendur. Til þess að setja upp aðgangsstýringu þá þarft þú að senda okkur lista yfir notendur og hvaða aðgengi þeir eiga að hafa. Dæmi um aðgagnsstýringu er t.d. verslunarstjóri sem á einungis að sjá tölur fyrir sýna verslun. <!--Svar-->
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__container" style="border-top: none;">
-                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
-                            <button @click="accordionOpen = !accordionOpen" class="accordion">
-
-                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
-                                    Get ég lesið inn áætlun? <!--Spurning-->
-                                </h3>
-                                <div style="position:absolute;">
-                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
-                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
-                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
-                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </button>
-                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
-                                <div class="">
-                                    <div class="rich__body pd-wysiwyg  pd-dark">
-                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">
-                                            Já, ef hún er á formi sem hentar við gagnainnlestur. Til þess að geta lesið inn rekstraráætlun þá þarf taflan að hafa eftirfarandi dálka [ Dagsetning - Bókhaldslykill - Deild (valfrjálst) - Upphæð ] <!--Svar-->
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--
-                    <div class="accordion__container" style="border-top: none;">
-                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
-                            <button @click="accordionOpen = !accordionOpen" class="accordion">
-
-                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
-                                    Hvernig breyti ég flokkun bókhaldslykla? <span style="color: red;">ÓSVARAÐ</span>
-                                </h3>
-                                <div style="position:absolute;">
-                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
-                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
-                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
-                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </button>
-                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
-                                <div class="">
-                                    <div class="rich__body pd-wysiwyg  pd-dark">
-                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        -->
-
-                    <div class="accordion__container" style="border-top: none;">
-                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
-                            <button @click="accordionOpen = !accordionOpen" class="accordion">
-
-                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
-                                    Hvernig loka ég aðgangi starfsmanns sem hættir?  <!--Spurning-->
-                                </h3>
-                                <div style="position:absolute;">
-                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
-                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
-                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
-                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </button>
-                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
-                                <div class="">
-                                    <div class="rich__body pd-wysiwyg  pd-dark">
-                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">
-                                            Þú getur eytt notenda á https://deloittereports.is/ í „Admin View“ eða haft samband við okkur og við eyðum honum út úr kerfinu. <!--Svar-->
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__container" style="border-top: none;">
-                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
-                            <button @click="accordionOpen = !accordionOpen" class="accordion">
-                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
-                                    Hvernig veit ég ef greiningarnar eru með nýjustu gögnin?  <!--Spurning-->
-                                </h3>
-                                <div style="position:absolute;">
-                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
-                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
-                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
-                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </button>
-                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
-                                <div class="">
-                                    <div class="rich__body pd-wysiwyg  pd-dark">
-                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">
-                                            Til að sjá hvenær gögnin voru uppfærð getur þú annað hvort skoðað dagsetninguna sem staðsett er í neðra hægra horni á forsíðu eða á sama stað á forsíðu hverrar greiningar fyrir sig, en þar má einnig sjá nákvæma tímasetningu uppfærslna.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__container" style="border-top: none;">
-                        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
-                            <button @click="accordionOpen = !accordionOpen" class="accordion">
-
-                                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
-                                    Get ég keypt greiningarnar?<!--Spurning-->
-                                </h3>
-                                <div style="position:absolute;">
-                                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
-                                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
-                                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
-                                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </button>
-                            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
-                                <div class="">
-                                    <div class="rich__body pd-wysiwyg  pd-dark">
-                                        <p style="font-size: 1.45em; color: black; font-weight: 100;">
-                                            Já, hafðu samband og við ræðum saman um verð og hvernig við afhendum greininguna til þín.<!--Svar-->
-                                        </p>
-                                    </div>
-                                </div>
+                    </button>
+                    <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                        <div class="">
+                            <div class="rich__body pd-wysiwyg  pd-dark">
+                                <p style="font-size: 1.45em; color: black; font-weight: 100;">
+                                    Gögnin eru geymd í þínu viðskiptakerfi. Allar gagnatengingar eru í gegnum skýið, þ.e.a.s. ekki vistuð hjá Deloitte.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            -->
+
+            <!--
+    <div class="accordion__container" style="border-top: none;">
+        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+            <button @click="accordionOpen = !accordionOpen" class="accordion">
+
+                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                    Hvernig tryggir Deloitte öryggi gagna? <span style="color: red;">ÓSVARAÐ</span>
+                </h3>
+                <div style="position:absolute;">
+                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                        </svg>
+                    </div>
+                </div>
+            </button>
+            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                <div class="">
+                    <div class="rich__body pd-wysiwyg  pd-dark">
+                        <p style="font-size: 1.45em; color: black; font-weight: 100;">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        -->
+
+            <div class="accordion__container" style="border-top: none;">
+                <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+                    <button @click="accordionOpen = !accordionOpen" class="accordion">
+
+                        <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                            Er einhver viðbótarkostnaður?  <!--Spurning-->
+                        </h3>
+                        <div style="position:absolute;">
+                            <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                                <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                                    <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                                    <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                    <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                        <div class="">
+                            <div class="rich__body pd-wysiwyg  pd-dark">
+                                <p style="font-size: 1.45em; color: black; font-weight: 100;">
+                                    Hýsingar-/þjónustuaðili bókhaldskerfis sem þú ert í viðskiptum hjá kann að rukka fyrir flutning gagna milli kerfa. Það er að segja þegar við sækjum gögn frá hýsingaraðila yfir í okkar kerfi. Slíkt gjald er rukkað eftir gagnamagni sem flutt er á milli hverju sinni mælt í GB. Gjaldið er samkvæmt gjaldskrá viðkomandi hýsingaraðila. Slíkt gjald er þó óverulegt þar sem mánaðarlegt gagnamagn er að öllu jöfnu frekar lítið þar sem við notumst við jaðaruppfærslu gagna (e. Incremental refresh) þar sem við náum einungis í „nýjustu“ gögnin þín og bætum þeim við í okkar gagnastraum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__container" style="border-top: none;">
+                <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+                    <button @click="accordionOpen = !accordionOpen" class="accordion">
+
+                        <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                            Hvað geri ég ef ég þarf aðstoð? <!--Spurning-->
+                        </h3>
+                        <div style="position:absolute;">
+                            <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                                <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                                    <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                                    <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                    <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                        <div class="">
+                            <div class="rich__body pd-wysiwyg  pd-dark">
+                                <p style="font-size: 1.45em; color: black; font-weight: 100;">
+                                    Þú getur sent póst á Magnús (moskarsson@deloitte.is) eða ef málið þolir enga bið, hringt í Ými (8951744).<!--Svar-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__container" style="border-top: none;">
+                <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+                    <button @click="accordionOpen = !accordionOpen" class="accordion">
+
+                        <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                            Hvernig gef ég bókaranum mínum aðgang? <!--Spurning-->
+                        </h3>
+                        <div style="position:absolute;">
+                            <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                                <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                                    <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                                    <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                    <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                        <div class="">
+                            <div class="rich__body pd-wysiwyg  pd-dark">
+                                <p style="font-size: 1.45em; color: black; font-weight: 100;">
+                                    Þú getur búið til nýjan notenda á https://deloittereports.is/ í „Admin View“ eða haft samband við okkur og við bætum honum við.<!--Svar-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__container" style="border-top: none;">
+                <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+                    <button @click="accordionOpen = !accordionOpen" class="accordion">
+
+                        <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                            Hvernig virkar aðgangsstýring gagna? <!--Spurning-->
+                        </h3>
+                        <div style="position:absolute;">
+                            <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                                <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                                    <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                                    <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                    <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                        <div class="">
+                            <div class="rich__body pd-wysiwyg  pd-dark">
+                                <p style="font-size: 1.45em; color: black; font-weight: 100;">
+                                    Aðgangsstýring er til þess að takmarka aðgengi gagna fyrir ákveðna notendur. Til þess að setja upp aðgangsstýringu þá þarft þú að senda okkur lista yfir notendur og hvaða aðgengi þeir eiga að hafa. Dæmi um aðgagnsstýringu er t.d. verslunarstjóri sem á einungis að sjá tölur fyrir sýna verslun. <!--Svar-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__container" style="border-top: none;">
+                <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+                    <button @click="accordionOpen = !accordionOpen" class="accordion">
+
+                        <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                            Get ég lesið inn áætlun? <!--Spurning-->
+                        </h3>
+                        <div style="position:absolute;">
+                            <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                                <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                                    <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                                    <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                    <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                        <div class="">
+                            <div class="rich__body pd-wysiwyg  pd-dark">
+                                <p style="font-size: 1.45em; color: black; font-weight: 100;">
+                                    Já, ef hún er á formi sem hentar við gagnainnlestur. Til þess að geta lesið inn rekstraráætlun þá þarf taflan að hafa eftirfarandi dálka [ Dagsetning - Bókhaldslykill - Deild (valfrjálst) - Upphæð ] <!--Svar-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+    <div class="accordion__container" style="border-top: none;">
+        <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+            <button @click="accordionOpen = !accordionOpen" class="accordion">
+
+                <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                    Hvernig breyti ég flokkun bókhaldslykla? <span style="color: red;">ÓSVARAÐ</span>
+                </h3>
+                <div style="position:absolute;">
+                    <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                        <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                            <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                            <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                        </svg>
+                    </div>
+                </div>
+            </button>
+            <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                <div class="">
+                    <div class="rich__body pd-wysiwyg  pd-dark">
+                        <p style="font-size: 1.45em; color: black; font-weight: 100;">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        -->
+
+            <div class="accordion__container" style="border-top: none;">
+                <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+                    <button @click="accordionOpen = !accordionOpen" class="accordion">
+
+                        <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                            Hvernig loka ég aðgangi starfsmanns sem hættir?  <!--Spurning-->
+                        </h3>
+                        <div style="position:absolute;">
+                            <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                                <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                                    <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                                    <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                    <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                        <div class="">
+                            <div class="rich__body pd-wysiwyg  pd-dark">
+                                <p style="font-size: 1.45em; color: black; font-weight: 100;">
+                                    Þú getur eytt notenda á https://deloittereports.is/ í „Admin View“ eða haft samband við okkur og við eyðum honum út úr kerfinu. <!--Svar-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__container" style="border-top: none;">
+                <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+                    <button @click="accordionOpen = !accordionOpen" class="accordion">
+                        <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                            Hvernig veit ég ef greiningarnar eru með nýjustu gögnin?  <!--Spurning-->
+                        </h3>
+                        <div style="position:absolute;">
+                            <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                                <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                                    <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                                    <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                    <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                        <div class="">
+                            <div class="rich__body pd-wysiwyg  pd-dark">
+                                <p style="font-size: 1.45em; color: black; font-weight: 100;">
+                                    Til að sjá hvenær gögnin voru uppfærð getur þú annað hvort skoðað dagsetninguna sem staðsett er í neðra hægra horni á forsíðu eða á sama stað á forsíðu hverrar greiningar fyrir sig, en þar má einnig sjá nákvæma tímasetningu uppfærslna.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__container" style="border-top: none;">
+                <div x-data="{ accordionOpen: false }" class="accordion__wrapper" style="border-bottom: 2px solid #D0D0CE;">
+                    <button @click="accordionOpen = !accordionOpen" class="accordion">
+
+                        <h3 class="accordion__title" style="color:black; font-size: 2.5em;">
+                            Get ég keypt greiningarnar?<!--Spurning-->
+                        </h3>
+                        <div style="position:absolute;">
+                            <div class="accordion__icon" :class="{ 'rotate-45' : accordionOpen }" style=" position: absolute; right: -1200px; top: -15px;">
+                                <svg class="" width="29" height="30" viewbox="0 0 29 30" fill="black" xmlns="http://www.w3.org/2000/svg" style="position: relative;">
+                                    <line y1="14.5" x2="29" y2="14.5" stroke="black" stroke-width="5" />
+                                    <line x1="14" y1="29.5" x2="14" y2="0.5" stroke="black" stroke-width="5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                    <div x-show.duration.1800ms="accordionOpen" class="accordion__content">
+                        <div class="">
+                            <div class="rich__body pd-wysiwyg  pd-dark">
+                                <p style="font-size: 1.45em; color: black; font-weight: 100;">
+                                    Já, hafðu samband og við ræðum saman um verð og hvernig við afhendum greininguna til þín.<!--Svar-->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
             </div>
         </section>
     </div>
